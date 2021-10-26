@@ -1,0 +1,5 @@
+2021-09-04 20:17:27,992 - octolapse.__init__ - INFO - Started logging to file.
+2021-09-04 20:17:27,996 - octolapse.settings - INFO - Loading existing settings file from: /home/pi/.octoprint/data/octolapse/settings.json.
+2021-09-04 20:17:28,020 - octolapse.settings - INFO - Creating settings from iterable.
+2021-09-04 20:17:28,075 - octolapse.settings - INFO - Settings created from iterable.
+2021-09-04 20:17:28,081 - octolapse.settings - INFO - Settings file loaded.

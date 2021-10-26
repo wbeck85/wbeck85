@@ -1,0 +1,130 @@
+{
+  "Untitled.gcode": {
+    "hash": "3ed91c2764af10a7f4516585607ffa8d30b0c726",
+    "DisplayLayerProgress": {
+      "totalLayerCountWithoutOffset": "293"
+    },
+    "analysis": {
+      "printingArea": {
+        "maxX": 199.585,
+        "maxY": 200.0,
+        "maxZ": 58.9,
+        "minX": 10.1,
+        "minY": 20.0,
+        "minZ": 0.0
+      },
+      "dimensions": {
+        "depth": 180.0,
+        "height": 58.9,
+        "width": 189.485
+      },
+      "estimatedPrintTime": 2100.427181365255,
+      "filament": {
+        "tool0": {
+          "length": 1950.0860399999965,
+          "volume": 0.0
+        }
+      }
+    },
+    "history": [
+      {
+        "timestamp": 1628654918.6949527,
+        "success": false,
+        "printerProfile": "_default"
+      },
+      {
+        "timestamp": 1628660659.0531816,
+        "success": false,
+        "printerProfile": "_default"
+      }
+    ],
+    "statistics": {
+      "averagePrintTime": {},
+      "lastPrintTime": {}
+    }
+  },
+  "Closet_Knob.gcode": {
+    "hash": "6683bcf3a2981e17a98d43462a25879187682acc",
+    "display": "Closet Knob.gcode",
+    "analysis": {
+      "printingArea": {
+        "maxX": 220.909,
+        "maxY": 220.909,
+        "maxZ": 34.95,
+        "minX": 179.091,
+        "minY": 179.087,
+        "minZ": 0.0
+      },
+      "dimensions": {
+        "depth": 41.822,
+        "height": 34.95,
+        "width": 41.817999999999984
+      },
+      "estimatedPrintTime": 3072.9576127255973,
+      "filament": {
+        "tool0": {
+          "length": 4317.727079999977,
+          "volume": 10.38535068846794
+        }
+      }
+    },
+    "DisplayLayerProgress": {
+      "totalLayerCountWithoutOffset": "0"
+    },
+    "history": [
+      {
+        "timestamp": 1629382261.0851052,
+        "success": false,
+        "printerProfile": "_default"
+      }
+    ],
+    "statistics": {
+      "averagePrintTime": {},
+      "lastPrintTime": {}
+    }
+  },
+  "Knob-v2.gcode": {
+    "hash": "a745cb4547775ccd0eb21d2f85b3883a506c8d82",
+    "history": [
+      {
+        "timestamp": 1629387266.0061905,
+        "success": false,
+        "printerProfile": "_default"
+      },
+      {
+        "timestamp": 1629428808.1935685,
+        "success": false,
+        "printerProfile": "_default"
+      }
+    ],
+    "statistics": {
+      "averagePrintTime": {},
+      "lastPrintTime": {}
+    },
+    "analysis": {
+      "printingArea": {
+        "maxX": 221.85,
+        "maxY": 221.85,
+        "maxZ": 40.012,
+        "minX": 178.15,
+        "minY": 178.159,
+        "minZ": 0.0
+      },
+      "dimensions": {
+        "depth": 43.691,
+        "height": 40.012,
+        "width": 43.69999999999999
+      },
+      "estimatedPrintTime": 9058.399952282518,
+      "filament": {
+        "tool0": {
+          "length": 4435.803769997345,
+          "volume": 10.669358410826385
+        }
+      }
+    },
+    "DisplayLayerProgress": {
+      "totalLayerCountWithoutOffset": "0"
+    }
+  }
+}

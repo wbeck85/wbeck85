@@ -1,0 +1,25 @@
+2021-09-20 00:36:19,259 - octolapse.__init__ - INFO - Started logging to file.
+2021-09-20 00:36:19,305 - octolapse.settings - INFO - Loading existing settings file from: /home/pi/.octoprint/data/octolapse/settings.json.
+2021-09-20 00:36:19,374 - octolapse.settings - INFO - Creating settings from iterable.
+2021-09-20 00:36:19,449 - octolapse.settings - INFO - Settings created from iterable.
+2021-09-20 00:36:19,457 - octolapse.settings - INFO - Settings file loaded.
+2021-09-20 01:13:07,571 - octolapse.__init__ - INFO - Started logging to file.
+2021-09-20 01:13:07,601 - octolapse.settings - INFO - Loading existing settings file from: /home/pi/.octoprint/data/octolapse/settings.json.
+2021-09-20 01:13:07,660 - octolapse.settings - INFO - Creating settings from iterable.
+2021-09-20 01:13:07,728 - octolapse.settings - INFO - Settings created from iterable.
+2021-09-20 01:13:07,735 - octolapse.settings - INFO - Settings file loaded.
+2021-09-20 01:46:05,533 - octolapse.__init__ - INFO - Started logging to file.
+2021-09-20 01:46:05,579 - octolapse.settings - INFO - Loading existing settings file from: /home/pi/.octoprint/data/octolapse/settings.json.
+2021-09-20 01:46:05,621 - octolapse.settings - INFO - Creating settings from iterable.
+2021-09-20 01:46:05,694 - octolapse.settings - INFO - Settings created from iterable.
+2021-09-20 01:46:05,705 - octolapse.settings - INFO - Settings file loaded.
+2021-09-20 02:10:15,337 - octolapse.__init__ - INFO - Started logging to file.
+2021-09-20 02:10:15,387 - octolapse.settings - INFO - Loading existing settings file from: /home/pi/.octoprint/data/octolapse/settings.json.
+2021-09-20 02:10:15,438 - octolapse.settings - INFO - Creating settings from iterable.
+2021-09-20 02:10:15,505 - octolapse.settings - INFO - Settings created from iterable.
+2021-09-20 02:10:15,517 - octolapse.settings - INFO - Settings file loaded.
+2021-09-20 19:41:09,979 - octolapse.__init__ - INFO - Started logging to file.
+2021-09-20 19:41:10,019 - octolapse.settings - INFO - Loading existing settings file from: /home/pi/.octoprint/data/octolapse/settings.json.
+2021-09-20 19:41:10,106 - octolapse.settings - INFO - Creating settings from iterable.
+2021-09-20 19:41:10,168 - octolapse.settings - INFO - Settings created from iterable.
+2021-09-20 19:41:10,191 - octolapse.settings - INFO - Settings file loaded.

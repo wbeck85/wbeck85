@@ -1,0 +1,10 @@
+2021-10-18 00:38:39,229   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check uninstall --yes OctoPrint-Fullscreen
+2021-10-18 00:38:41,766 > Found existing installation: OctoPrint-Fullscreen 0.0.6
+2021-10-18 00:38:41,767 > Uninstalling OctoPrint-Fullscreen-0.0.6:
+2021-10-18 00:38:41,767 > Successfully uninstalled OctoPrint-Fullscreen-0.0.6
+2021-10-18 00:38:41,955 > Cleaning up plugin fullscreen...
+2021-10-18 00:41:46,116   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check uninstall --yes Themeify
+2021-10-18 00:41:48,673 > Found existing installation: Themeify 1.2.2
+2021-10-18 00:41:48,674 > Uninstalling Themeify-1.2.2:
+2021-10-18 00:41:48,674 > Successfully uninstalled Themeify-1.2.2
+2021-10-18 00:41:48,836 > Cleaning up plugin themeify...

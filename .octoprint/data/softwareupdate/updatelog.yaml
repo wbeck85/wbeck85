@@ -1,0 +1,8 @@
+- current_version: 1.26.0
+  datetime: '2021-10-18 00:44:51'
+  display_name: DisplayLayerProgress Plugin
+  release_notes: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/releases/tag/1.27.1
+  success: true
+  target: DisplayLayerProgress
+  target_version: 1.27.1
+  text: Update successful

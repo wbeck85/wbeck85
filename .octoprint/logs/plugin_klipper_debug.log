@@ -1,0 +1,33 @@
+[2021-10-25 23:08:39,098] ERROR:  MCU 'mcu' shutdown: ADC out of range
+
+[2021-10-25 23:08:39,168] INFO:  MCU 'mcu' shutdown: ADC out of range
+ This generally occurs when a heater temperature exceeds
+ its configured min_temp or max_temp.
+ Once the underlying issue is corrected, use the
+ "FIRMWARE_RESTART" command to reset the firmware, reload the
+ config, and restart the host software.
+ Printer is shutdown
+
+[2021-10-25 23:11:01,317] ERROR:  MCU 'mcu' shutdown: ADC out of range
+
+[2021-10-25 23:11:01,354] INFO:  MCU 'mcu' shutdown: ADC out of range
+ This generally occurs when a heater temperature exceeds
+ its configured min_temp or max_temp.
+ Once the underlying issue is corrected, use the
+ "FIRMWARE_RESTART" command to reset the firmware, reload the
+ config, and restart the host software.
+ Printer is shutdown
+ Klipper state: Not ready
+
+[2021-10-25 23:11:10,826] ERROR:  MCU 'mcu' shutdown: ADC out of range
+
+[2021-10-25 23:11:10,883] INFO:  MCU 'mcu' shutdown: ADC out of range
+ This generally occurs when a heater temperature exceeds
+ its configured min_temp or max_temp.
+ Once the underlying issue is corrected, use the
+ "FIRMWARE_RESTART" command to reset the firmware, reload the
+ config, and restart the host software.
+ Printer is shutdown
+ Klipper state: Not ready
+
+[2021-10-25 23:25:11,522] INFO: Connected to host via /tmp/printer @250000bps

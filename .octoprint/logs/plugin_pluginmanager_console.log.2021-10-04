@@ -1,0 +1,63 @@
+2021-10-04 21:51:55,053   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install file:///tmp/tmpijla1lgm/OctoPrint-PlotlyTempGraph-master.zip --no-cache-dir
+2021-10-04 21:51:59,095 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-04 21:51:59,097 > Processing /tmp/tmpijla1lgm/OctoPrint-PlotlyTempGraph-master.zip
+2021-10-04 21:52:03,246 > Requirement already satisfied: OctoPrint in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint-PlotlyTempGraph==0.1.2) (1.6.1)
+2021-10-04 21:52:03,261 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.1.8)
+2021-10-04 21:52:03,261 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.0.0)
+2021-10-04 21:52:03,261 > Requirement already satisfied: emoji<1,>=0.5.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.6.0)
+2021-10-04 21:52:03,262 > Requirement already satisfied: requests<3,>=2.23.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2.25.1)
+2021-10-04 21:52:03,262 > Requirement already satisfied: zeroconf<0.25,>=0.24 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.24.5)
+2021-10-04 21:52:03,262 > Requirement already satisfied: tornado==5.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (5.1.1)
+2021-10-04 21:52:03,263 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.0.1)
+2021-10-04 21:52:03,263 > Requirement already satisfied: flask<2,>=1.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.1.2)
+2021-10-04 21:52:03,263 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.0.7)
+2021-10-04 21:52:03,263 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (7.1.2)
+2021-10-04 21:52:03,264 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.1.0)
+2021-10-04 21:52:03,264 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2.8.5)
+2021-10-04 21:52:03,264 > Requirement already satisfied: feedparser<7,>=6.0.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (6.0.2)
+2021-10-04 21:52:03,265 > Requirement already satisfied: Jinja2<3,>=2.11.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2.11.2)
+2021-10-04 21:52:03,265 > Requirement already satisfied: immutabledict<2,>=1.2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.3.0)
+2021-10-04 21:52:03,265 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2021.2.23)
+2021-10-04 21:52:03,265 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.1.1)
+2021-10-04 21:52:03,266 > Requirement already satisfied: PyYAML<6,>=5.3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (5.3.1)
+2021-10-04 21:52:03,266 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (3.1.1)
+2021-10-04 21:52:03,266 > Requirement already satisfied: OctoPrint-PiSupport>=2021.3.26 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2021.8.2)
+2021-10-04 21:52:03,267 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (3.5)
+2021-10-04 21:52:03,267 > Requirement already satisfied: netifaces<1,>=0.10.9 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.10.9)
+2021-10-04 21:52:03,267 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2.0)
+2021-10-04 21:52:03,267 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.2.0)
+2021-10-04 21:52:03,268 > Requirement already satisfied: sarge==0.1.5post0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.1.5.post0)
+2021-10-04 21:52:03,268 > Requirement already satisfied: psutil<6,>=5.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (5.8.0)
+2021-10-04 21:52:03,269 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.4)
+2021-10-04 21:52:03,269 > Requirement already satisfied: cachelib<1,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.1.1)
+2021-10-04 21:52:03,269 > Requirement already satisfied: wrapt<2,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.12.1)
+2021-10-04 21:52:03,269 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2020.11.13)
+2021-10-04 21:52:03,270 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.18.2)
+2021-10-04 21:52:03,270 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.2.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2021.8.11)
+2021-10-04 21:52:03,270 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.4.21)
+2021-10-04 21:52:03,271 > Requirement already satisfied: websocket-client<1,>=0.57 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.57.0)
+2021-10-04 21:52:03,271 > Requirement already satisfied: netaddr<1,>=0.7.19 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.8.0)
+2021-10-04 21:52:03,271 > Requirement already satisfied: sentry-sdk<1,>=0.15.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.19.5)
+2021-10-04 21:52:03,271 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.5.0)
+2021-10-04 21:52:03,272 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.6.1)
+2021-10-04 21:52:03,272 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.10.4)
+2021-10-04 21:52:03,272 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.1.2)
+2021-10-04 21:52:03,272 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.2->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.0.0)
+2021-10-04 21:52:03,273 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2.0)
+2021-10-04 21:52:03,273 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2020.5)
+2021-10-04 21:52:03,273 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2.9.0)
+2021-10-04 21:52:03,274 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (51.1.2)
+2021-10-04 21:52:03,274 > Requirement already satisfied: chardet<5,>=3.0.2 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (4.0.0)
+2021-10-04 21:52:03,274 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2020.12.5)
+2021-10-04 21:52:03,274 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.26.2)
+2021-10-04 21:52:03,275 > Requirement already satisfied: idna<3,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (2.10)
+2021-10-04 21:52:03,275 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.57->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (1.15.0)
+2021-10-04 21:52:03,275 > Requirement already satisfied: ifaddr in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.25,>=0.24->OctoPrint->OctoPrint-PlotlyTempGraph==0.1.2) (0.1.7)
+2021-10-04 21:52:03,276 > Building wheels for collected packages: OctoPrint-PlotlyTempGraph
+2021-10-04 21:52:03,276 > Building wheel for OctoPrint-PlotlyTempGraph (setup.py): started
+2021-10-04 21:52:06,280 > Building wheel for OctoPrint-PlotlyTempGraph (setup.py): finished with status 'done'
+2021-10-04 21:52:06,280 > Created wheel for OctoPrint-PlotlyTempGraph: filename=OctoPrint_PlotlyTempGraph-0.1.2-py3-none-any.whl size=1073510 sha256=f133663fe0deac0a942f221b59c9b32d1ed2c5c4143f4e6b331b0cbd74487ab5
+2021-10-04 21:52:06,281 > Stored in directory: /tmp/pip-ephem-wheel-cache-epovzott/wheels/ae/7e/f0/487bf42ac97f0eb1529f00e1656e40377acd311c6d73480fdc
+2021-10-04 21:52:06,281 > Successfully built OctoPrint-PlotlyTempGraph
+2021-10-04 21:52:07,415 > Installing collected packages: OctoPrint-PlotlyTempGraph
+2021-10-04 21:52:07,415 > Successfully installed OctoPrint-PlotlyTempGraph-0.1.2

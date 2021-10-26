@@ -1,0 +1,690 @@
+2021-07-28 23:32:08,182   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint/archive/1.6.1.zip --no-cache-dir
+2021-07-28 23:32:11,292 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-07-28 23:32:11,293 > Collecting https://github.com/OctoPrint/OctoPrint/archive/1.6.1.zip
+2021-07-28 23:32:12,296 > Downloading https://github.com/OctoPrint/OctoPrint/archive/1.6.1.zip
+2021-07-28 23:32:25,103 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.1.1)
+2021-07-28 23:32:25,105 > Requirement already satisfied: tornado==5.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (5.1.1)
+2021-07-28 23:32:25,105 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (3.1.1)
+2021-07-28 23:32:25,105 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (2020.11.13)
+2021-07-28 23:32:25,106 > Requirement already satisfied: flask<2,>=1.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.1.2)
+2021-07-28 23:32:25,106 > Requirement already satisfied: Jinja2<3,>=2.11.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (2.11.2)
+2021-07-28 23:32:25,106 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.5.0)
+2021-07-28 23:32:25,107 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.0.0)
+2021-07-28 23:32:25,107 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (2.0)
+2021-07-28 23:32:25,107 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.0.1)
+2021-07-28 23:32:25,108 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.1.0)
+2021-07-28 23:32:25,108 > Requirement already satisfied: cachelib<1,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.1.1)
+2021-07-28 23:32:25,108 > Requirement already satisfied: PyYAML<6,>=5.3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (5.3.1)
+2021-07-28 23:32:25,108 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (3.5)
+2021-07-28 23:32:25,109 > Requirement already satisfied: netaddr<1,>=0.7.19 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.8.0)
+2021-07-28 23:32:25,109 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.10.4)
+2021-07-28 23:32:25,109 > Requirement already satisfied: sarge==0.1.5post0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.1.5.post0)
+2021-07-28 23:32:25,110 > Requirement already satisfied: netifaces<1,>=0.10.9 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.10.9)
+2021-07-28 23:32:25,110 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.2.0)
+2021-07-28 23:32:25,110 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.6.1)
+2021-07-28 23:32:25,111 > Requirement already satisfied: requests<3,>=2.23.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (2.25.1)
+2021-07-28 23:32:25,111 > Requirement already satisfied: semantic_version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (2.8.5)
+2021-07-28 23:32:25,111 > Requirement already satisfied: psutil<6,>=5.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (5.8.0)
+2021-07-28 23:32:25,111 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (7.1.2)
+2021-07-28 23:32:25,112 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.18.2)
+2021-07-28 23:32:25,112 > Requirement already satisfied: websocket-client<1,>=0.57 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.57.0)
+2021-07-28 23:32:25,112 > Requirement already satisfied: wrapt<2,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.12.1)
+2021-07-28 23:32:25,113 > Requirement already satisfied: emoji<1,>=0.5.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.6.0)
+2021-07-28 23:32:25,113 > Requirement already satisfied: sentry-sdk<1,>=0.15.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.19.5)
+2021-07-28 23:32:25,113 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.0.7)
+2021-07-28 23:32:25,114 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.4.21)
+2021-07-28 23:32:25,114 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (1.4)
+2021-07-28 23:32:25,114 > Requirement already satisfied: feedparser<7,>=6.0.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (6.0.2)
+2021-07-28 23:32:25,114 > Requirement already satisfied: zeroconf<0.25,>=0.24 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.6.1) (0.24.5)
+2021-07-28 23:32:25,115 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint==1.6.1) (0.1.2)
+2021-07-28 23:32:25,115 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.2->OctoPrint==1.6.1) (1.0.0)
+2021-07-28 23:32:25,115 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint==1.6.1) (2.0)
+2021-07-28 23:32:25,116 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint==1.6.1) (2020.5)
+2021-07-28 23:32:25,116 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint==1.6.1) (2.9.0)
+2021-07-28 23:32:25,116 > Collecting immutabledict<2,>=1.2.0
+2021-07-28 23:32:25,116 > Downloading https://www.piwheels.org/simple/immutabledict/immutabledict-1.3.0-py3-none-any.whl (3.8 kB)
+2021-07-28 23:32:25,117 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint==1.6.1) (51.1.2)
+2021-07-28 23:32:25,117 > Collecting OctoPrint-FileCheck>=2021.2.23
+2021-07-28 23:32:25,118 > Downloading https://www.piwheels.org/simple/octoprint-filecheck/OctoPrint_FileCheck-2021.2.23-py2.py3-none-any.whl (19 kB)
+2021-07-28 23:32:25,118 > Collecting OctoPrint-FirmwareCheck>=2021.2.4
+2021-07-28 23:32:25,119 > Downloading https://www.piwheels.org/simple/octoprint-firmwarecheck/OctoPrint_FirmwareCheck-2021.5.31-py2.py3-none-any.whl (31 kB)
+2021-07-28 23:32:25,119 > Collecting OctoPrint-PiSupport>=2021.3.26
+2021-07-28 23:32:25,119 > Downloading https://www.piwheels.org/simple/octoprint-pisupport/OctoPrint_PiSupport-2021.6.14-py2.py3-none-any.whl (30 kB)
+2021-07-28 23:32:25,119 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.6.1) (2020.12.5)
+2021-07-28 23:32:25,120 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.6.1) (1.26.2)
+2021-07-28 23:32:25,120 > Requirement already satisfied: chardet<5,>=3.0.2 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.6.1) (4.0.0)
+2021-07-28 23:32:25,120 > Requirement already satisfied: idna<3,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.6.1) (2.10)
+2021-07-28 23:32:25,121 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.57->OctoPrint==1.6.1) (1.15.0)
+2021-07-28 23:32:25,121 > Requirement already satisfied: ifaddr in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.25,>=0.24->OctoPrint==1.6.1) (0.1.7)
+2021-07-28 23:32:25,121 > Collecting zipstream-new<1.2,>=1.1.8
+2021-07-28 23:32:25,121 > Downloading https://www.piwheels.org/simple/zipstream-new/zipstream_new-1.1.8-py3-none-any.whl (20 kB)
+2021-07-28 23:32:25,122 > Building wheels for collected packages: OctoPrint
+2021-07-28 23:32:25,122 > Building wheel for OctoPrint (setup.py): started
+2021-07-28 23:32:32,646 > Building wheel for OctoPrint (setup.py): finished with status 'done'
+2021-07-28 23:32:32,648 > Created wheel for OctoPrint: filename=OctoPrint-1.6.1-py2.py3-none-any.whl size=3868472 sha256=4cb20ca80cd2e207bab8194e9fec7df8df37cea96511e8c5fe50a4e856f0a04d
+2021-07-28 23:32:32,649 > Stored in directory: /tmp/pip-ephem-wheel-cache-c5m7jkx5/wheels/3b/60/8b/99670f7928f19073d6caf73baec5ecd269de56e67449c44242
+2021-07-28 23:32:32,649 > Successfully built OctoPrint
+2021-07-28 23:32:33,774 > Installing collected packages: zipstream-new, OctoPrint-PiSupport, OctoPrint-FirmwareCheck, OctoPrint-FileCheck, immutabledict, OctoPrint
+2021-07-28 23:32:33,775 > Attempting uninstall: OctoPrint-FirmwareCheck
+2021-07-28 23:32:33,777 > Found existing installation: OctoPrint-FirmwareCheck 2020.9.23
+2021-07-28 23:32:33,777 > Uninstalling OctoPrint-FirmwareCheck-2020.9.23:
+2021-07-28 23:32:33,778 > Successfully uninstalled OctoPrint-FirmwareCheck-2020.9.23
+2021-07-28 23:32:33,778 > Attempting uninstall: OctoPrint-FileCheck
+2021-07-28 23:32:33,778 > Found existing installation: OctoPrint-FileCheck 2020.8.7
+2021-07-28 23:32:33,779 > Uninstalling OctoPrint-FileCheck-2020.8.7:
+2021-07-28 23:32:33,779 > Successfully uninstalled OctoPrint-FileCheck-2020.8.7
+2021-07-28 23:32:33,779 > Attempting uninstall: OctoPrint
+2021-07-28 23:32:33,780 > Found existing installation: OctoPrint 1.5.2
+2021-07-28 23:32:34,782 > Uninstalling OctoPrint-1.5.2:
+2021-07-28 23:32:34,784 > Successfully uninstalled OctoPrint-1.5.2
+2021-07-28 23:32:38,200 > Successfully installed OctoPrint-1.6.1 OctoPrint-FileCheck-2021.2.23 OctoPrint-FirmwareCheck-2021.5.31 OctoPrint-PiSupport-2021.6.14 immutabledict-1.3.0 zipstream-new-1.1.8
+2021-07-28 23:32:38,862   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint-FileCheck/archive/2021.2.23.zip --no-cache-dir
+2021-07-28 23:32:41,767 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-07-28 23:32:41,768 > Collecting https://github.com/OctoPrint/OctoPrint-FileCheck/archive/2021.2.23.zip
+2021-07-28 23:32:41,770 > Downloading https://github.com/OctoPrint/OctoPrint-FileCheck/archive/2021.2.23.zip (56 kB)
+2021-07-28 23:32:44,886   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.5.31.zip --no-cache-dir
+2021-07-28 23:32:47,847 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-07-28 23:32:47,849 > Collecting https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.5.31.zip
+2021-07-28 23:32:48,470 > Downloading https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.5.31.zip
+2021-08-02 01:24:55,091   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/archive/1.1.0.zip --no-cache-dir
+2021-08-02 01:24:58,187 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-08-02 01:24:58,189 > Collecting https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/archive/1.1.0.zip
+2021-08-02 01:24:58,190 > Downloading https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/archive/1.1.0.zip (3.0 MB)
+2021-08-02 01:25:00,605 > Requirement already satisfied: OctoPrint in /home/pi/oprint/lib/python3.7/site-packages (from Bed-Visualizer==1.1.0) (1.6.1)
+2021-08-02 01:25:03,043 > Requirement already satisfied: flask<2,>=1.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.1.2)
+2021-08-02 01:25:03,043 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (3.5)
+2021-08-02 01:25:03,044 > Requirement already satisfied: tornado==5.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (5.1.1)
+2021-08-02 01:25:03,045 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2020.11.13)
+2021-08-02 01:25:03,045 > Requirement already satisfied: netaddr<1,>=0.7.19 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.8.0)
+2021-08-02 01:25:03,046 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.2.0)
+2021-08-02 01:25:03,047 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.6.1)
+2021-08-02 01:25:03,047 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.1.8)
+2021-08-02 01:25:03,048 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.1.1)
+2021-08-02 01:25:03,048 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.10.4)
+2021-08-02 01:25:03,049 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2.8.5)
+2021-08-02 01:25:03,049 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.18.2)
+2021-08-02 01:25:03,050 > Requirement already satisfied: feedparser<7,>=6.0.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (6.0.2)
+2021-08-02 01:25:03,050 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.0.7)
+2021-08-02 01:25:03,051 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2021.2.23)
+2021-08-02 01:25:03,051 > Requirement already satisfied: PyYAML<6,>=5.3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (5.3.1)
+2021-08-02 01:25:03,052 > Requirement already satisfied: emoji<1,>=0.5.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.6.0)
+2021-08-02 01:25:03,052 > Requirement already satisfied: OctoPrint-PiSupport>=2021.3.26 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2021.6.14)
+2021-08-02 01:25:03,053 > Requirement already satisfied: sarge==0.1.5post0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.1.5.post0)
+2021-08-02 01:25:03,053 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (7.1.2)
+2021-08-02 01:25:03,054 > Requirement already satisfied: netifaces<1,>=0.10.9 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.10.9)
+2021-08-02 01:25:03,054 > Requirement already satisfied: immutabledict<2,>=1.2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.3.0)
+2021-08-02 01:25:03,055 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.4.21)
+2021-08-02 01:25:03,055 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.5.0)
+2021-08-02 01:25:03,056 > Requirement already satisfied: psutil<6,>=5.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (5.8.0)
+2021-08-02 01:25:03,058 > Requirement already satisfied: Jinja2<3,>=2.11.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2.11.2)
+2021-08-02 01:25:03,059 > Requirement already satisfied: cachelib<1,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.1.1)
+2021-08-02 01:25:03,059 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.2.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2021.5.31)
+2021-08-02 01:25:03,060 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.0.0)
+2021-08-02 01:25:03,061 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.0.1)
+2021-08-02 01:25:03,062 > Requirement already satisfied: requests<3,>=2.23.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2.25.1)
+2021-08-02 01:25:03,062 > Requirement already satisfied: websocket-client<1,>=0.57 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.57.0)
+2021-08-02 01:25:03,063 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.1.0)
+2021-08-02 01:25:03,063 > Requirement already satisfied: wrapt<2,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.12.1)
+2021-08-02 01:25:03,064 > Requirement already satisfied: sentry-sdk<1,>=0.15.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.19.5)
+2021-08-02 01:25:03,064 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (1.4)
+2021-08-02 01:25:03,065 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (3.1.1)
+2021-08-02 01:25:03,065 > Requirement already satisfied: zeroconf<0.25,>=0.24 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (0.24.5)
+2021-08-02 01:25:03,066 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->Bed-Visualizer==1.1.0) (2.0)
+2021-08-02 01:25:03,066 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint->Bed-Visualizer==1.1.0) (0.1.2)
+2021-08-02 01:25:03,067 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.2->OctoPrint->Bed-Visualizer==1.1.0) (1.0.0)
+2021-08-02 01:25:03,067 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->Bed-Visualizer==1.1.0) (2.0)
+2021-08-02 01:25:03,068 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->Bed-Visualizer==1.1.0) (2.9.0)
+2021-08-02 01:25:03,068 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->Bed-Visualizer==1.1.0) (2020.5)
+2021-08-02 01:25:03,069 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint->Bed-Visualizer==1.1.0) (51.1.2)
+2021-08-02 01:25:03,070 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->Bed-Visualizer==1.1.0) (1.26.2)
+2021-08-02 01:25:03,071 > Requirement already satisfied: idna<3,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->Bed-Visualizer==1.1.0) (2.10)
+2021-08-02 01:25:03,072 > Requirement already satisfied: chardet<5,>=3.0.2 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->Bed-Visualizer==1.1.0) (4.0.0)
+2021-08-02 01:25:03,073 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.23.0->OctoPrint->Bed-Visualizer==1.1.0) (2020.12.5)
+2021-08-02 01:25:03,073 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.57->OctoPrint->Bed-Visualizer==1.1.0) (1.15.0)
+2021-08-02 01:25:03,074 > Requirement already satisfied: ifaddr in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.25,>=0.24->OctoPrint->Bed-Visualizer==1.1.0) (0.1.7)
+2021-08-02 01:25:03,074 > Building wheels for collected packages: Bed-Visualizer
+2021-08-02 01:25:03,075 > Building wheel for Bed-Visualizer (setup.py): started
+2021-08-02 01:25:06,293 > Building wheel for Bed-Visualizer (setup.py): finished with status 'done'
+2021-08-02 01:25:06,295 > Created wheel for Bed-Visualizer: filename=Bed_Visualizer-1.1.0-py3-none-any.whl size=2028071 sha256=eb49c3a7c7dc442de664e9abff5533184511ba9d2bc0cc5f04b11d39b311187f
+2021-08-02 01:25:06,296 > Stored in directory: /tmp/pip-ephem-wheel-cache-05xgo61z/wheels/ad/18/8f/742d8334f20bd8eaf98f45d6c241c8644d40a51c3d012eee48
+2021-08-02 01:25:06,297 > Successfully built Bed-Visualizer
+2021-08-02 01:25:07,509 > Installing collected packages: Bed-Visualizer
+2021-08-02 01:25:07,510 > Attempting uninstall: Bed-Visualizer
+2021-08-02 01:25:07,511 > Found existing installation: Bed-Visualizer 1.0.1
+2021-08-02 01:25:07,512 > Uninstalling Bed-Visualizer-1.0.1:
+2021-08-02 01:25:07,512 > Successfully uninstalled Bed-Visualizer-1.0.1
+2021-08-02 01:25:07,513 > Successfully installed Bed-Visualizer-1.1.0
+2021-08-02 14:03:26,343   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint-PiSupport/archive/2021.8.2.zip --no-cache-dir
+2021-08-02 14:03:30,156 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-08-02 14:03:30,159 > Collecting https://github.com/OctoPrint/OctoPrint-PiSupport/archive/2021.8.2.zip
+2021-08-02 14:03:30,160 > Downloading https://github.com/OctoPrint/OctoPrint-PiSupport/archive/2021.8.2.zip (55 kB)
+2021-08-02 14:03:32,194 > Building wheels for collected packages: OctoPrint-PiSupport
+2021-08-02 14:03:32,196 > Building wheel for OctoPrint-PiSupport (setup.py): started
+2021-08-02 14:03:34,315 > Building wheel for OctoPrint-PiSupport (setup.py): finished with status 'done'
+2021-08-02 14:03:34,316 > Created wheel for OctoPrint-PiSupport: filename=OctoPrint_PiSupport-2021.8.2-py2.py3-none-any.whl size=31522 sha256=eb910317c9f6074f33382ea5bdd62cea4d108865d8a9071b666011f6b0537b21
+2021-08-02 14:03:34,317 > Stored in directory: /tmp/pip-ephem-wheel-cache-ao1zkx8d/wheels/30/95/62/917ae5e03763b23be8e70ddb6c73923a590387bd6785c3a558
+2021-08-02 14:03:34,318 > Successfully built OctoPrint-PiSupport
+2021-08-02 14:03:36,945 > Installing collected packages: OctoPrint-PiSupport
+2021-08-02 14:03:36,949 > Attempting uninstall: OctoPrint-PiSupport
+2021-08-02 14:03:36,950 > Found existing installation: OctoPrint-PiSupport 2021.6.14
+2021-08-02 14:03:36,951 > Uninstalling OctoPrint-PiSupport-2021.6.14:
+2021-08-02 14:03:36,951 > Successfully uninstalled OctoPrint-PiSupport-2021.6.14
+2021-08-02 14:03:36,952 > Successfully installed OctoPrint-PiSupport-2021.8.2
+2021-08-07 21:01:06,947 
+2021-08-07 21:01:06,950 /usr/bin/avrdude -v -q -p m2560 -c arduino -P /dev/ttyUSB0 -D -U flash:w:/tmp/tmp61zroyx6:i
+2021-08-07 21:01:07,565 > 
+2021-08-07 21:01:07,566 > avrdude: Version 6.3-20171130
+2021-08-07 21:01:07,566 >          Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+2021-08-07 21:01:07,567 >          Copyright (c) 2007-2014 Joerg Wunsch
+2021-08-07 21:01:07,568 > 
+2021-08-07 21:01:07,568 >          System wide configuration file is "/etc/avrdude.conf"
+2021-08-07 21:01:07,569 >          User configuration file is "/home/pi/.avrduderc"
+2021-08-07 21:01:07,569 >          User configuration file does not exist or is not a regular file, skipping
+2021-08-07 21:01:07,570 > 
+2021-08-07 21:01:07,570 >          Using Port                    : /dev/ttyUSB0
+2021-08-07 21:01:07,571 >          Using Programmer              : arduino
+2021-08-07 21:01:07,571 > 
+2021-08-07 21:01:13,625 > avrdude: stk500_recv(): programmer is not responding
+2021-08-07 21:01:13,626 > avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
+2021-08-07 21:01:13,626 > 
+2021-08-07 21:04:48,838 
+2021-08-07 21:04:48,841 /usr/bin/avrdude -v -q -p m2560 -c arduino -P /dev/ttyUSB0 -D -U flash:w:/tmp/tmpeqiw_789:i
+2021-08-07 21:04:49,495 > 
+2021-08-07 21:04:49,496 > avrdude: Version 6.3-20171130
+2021-08-07 21:04:49,497 >          Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+2021-08-07 21:04:49,497 >          Copyright (c) 2007-2014 Joerg Wunsch
+2021-08-07 21:04:49,498 > 
+2021-08-07 21:04:49,498 >          System wide configuration file is "/etc/avrdude.conf"
+2021-08-07 21:04:49,499 >          User configuration file is "/home/pi/.avrduderc"
+2021-08-07 21:04:49,499 >          User configuration file does not exist or is not a regular file, skipping
+2021-08-07 21:04:49,499 > 
+2021-08-07 21:04:49,500 >          Using Port                    : /dev/ttyUSB0
+2021-08-07 21:04:49,500 >          Using Programmer              : arduino
+2021-08-07 21:04:49,501 > 
+2021-08-07 21:04:55,550 > avrdude: stk500_recv(): programmer is not responding
+2021-08-07 21:04:55,551 > avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
+2021-08-07 21:04:55,552 > 
+2021-08-07 21:06:21,900 
+2021-08-07 21:06:21,904 /usr/bin/avrdude -v -q -p m2560 -c arduino -P /dev/ttyUSB0 -D -b 115200 -U flash:w:/tmp/tmp44izunak:i
+2021-08-07 21:06:22,564 > 
+2021-08-07 21:06:22,565 > avrdude: Version 6.3-20171130
+2021-08-07 21:06:22,565 >          Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+2021-08-07 21:06:22,565 >          Copyright (c) 2007-2014 Joerg Wunsch
+2021-08-07 21:06:22,566 > 
+2021-08-07 21:06:22,566 >          System wide configuration file is "/etc/avrdude.conf"
+2021-08-07 21:06:22,567 >          User configuration file is "/home/pi/.avrduderc"
+2021-08-07 21:06:22,567 >          User configuration file does not exist or is not a regular file, skipping
+2021-08-07 21:06:22,568 > 
+2021-08-07 21:06:22,568 >          Using Port                    : /dev/ttyUSB0
+2021-08-07 21:06:22,569 >          Using Programmer              : arduino
+2021-08-07 21:06:22,569 >          Overriding Baud Rate          : 115200
+2021-08-07 21:06:22,569 > 
+2021-08-07 21:06:28,612 > avrdude: stk500_recv(): programmer is not responding
+2021-08-07 21:06:28,613 > avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
+2021-08-07 21:06:28,613 > 
+2021-08-07 21:13:40,084 
+2021-08-07 21:13:40,087 /usr/bin/avrdude -v -q -p m2560 -c arduino -P /dev/ttyUSB0 -D -b 115200 -U flash:w:/tmp/tmpjw6n0zeq:i
+2021-08-07 21:13:40,702 > 
+2021-08-07 21:13:40,704 > avrdude: Version 6.3-20171130
+2021-08-07 21:13:40,704 >          Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+2021-08-07 21:13:40,705 >          Copyright (c) 2007-2014 Joerg Wunsch
+2021-08-07 21:13:40,706 > 
+2021-08-07 21:13:40,706 >          System wide configuration file is "/etc/avrdude.conf"
+2021-08-07 21:13:40,707 >          User configuration file is "/home/pi/.avrduderc"
+2021-08-07 21:13:40,708 >          User configuration file does not exist or is not a regular file, skipping
+2021-08-07 21:13:40,708 > 
+2021-08-07 21:13:40,709 >          Using Port                    : /dev/ttyUSB0
+2021-08-07 21:13:40,710 >          Using Programmer              : arduino
+2021-08-07 21:13:40,710 >          Overriding Baud Rate          : 115200
+2021-08-07 21:13:40,711 > 
+2021-08-07 21:13:46,762 > avrdude: stk500_recv(): programmer is not responding
+2021-08-07 21:13:46,763 > avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
+2021-08-07 21:13:46,764 > 
+2021-10-02 19:27:18,699   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.8.11.zip --no-cache-dir
+2021-10-02 19:27:22,014 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-02 19:27:22,016 > Collecting https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.8.11.zip
+2021-10-02 19:27:22,017 > Downloading https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.8.11.zip (71 kB)
+2021-10-02 19:27:24,021 > Building wheels for collected packages: OctoPrint-FirmwareCheck
+2021-10-02 19:27:24,023 > Building wheel for OctoPrint-FirmwareCheck (setup.py): started
+2021-10-02 19:27:26,073 > Building wheel for OctoPrint-FirmwareCheck (setup.py): finished with status 'done'
+2021-10-02 19:27:26,079 > Created wheel for OctoPrint-FirmwareCheck: filename=OctoPrint_FirmwareCheck-2021.8.11-py2.py3-none-any.whl size=33786 sha256=9bb8fd89c232cd2eb866de53848cd4f30b0c0fb031fa07bf23338da5af4c9df1
+2021-10-02 19:27:26,080 > Stored in directory: /tmp/pip-ephem-wheel-cache-nu6pupi8/wheels/36/61/25/d815d38f742a3a3256ef36fa5f4e49d76753c337900809852a
+2021-10-02 19:27:26,080 > Successfully built OctoPrint-FirmwareCheck
+2021-10-02 19:27:28,657 > Installing collected packages: OctoPrint-FirmwareCheck
+2021-10-02 19:27:28,659 > Attempting uninstall: OctoPrint-FirmwareCheck
+2021-10-02 19:27:28,660 > Found existing installation: OctoPrint-FirmwareCheck 2021.5.31
+2021-10-02 19:27:28,660 > Uninstalling OctoPrint-FirmwareCheck-2021.5.31:
+2021-10-02 19:27:28,661 > Successfully uninstalled OctoPrint-FirmwareCheck-2021.5.31
+2021-10-02 19:27:28,661 > Successfully installed OctoPrint-FirmwareCheck-2021.8.11
+2021-10-18 00:19:19,260   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint/archive/1.7.0.zip --no-cache-dir
+2021-10-18 00:19:22,601 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-18 00:19:22,604 > Collecting https://github.com/OctoPrint/OctoPrint/archive/1.7.0.zip
+2021-10-18 00:19:23,792 > Downloading https://github.com/OctoPrint/OctoPrint/archive/1.7.0.zip (6.6 MB)
+2021-10-18 00:19:31,807 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (2021.2.23)
+2021-10-18 00:19:33,852 > Requirement already satisfied: OctoPrint-PiSupport>=2021.8.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (2021.8.2)
+2021-10-18 00:19:34,068 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.1.1)
+2021-10-18 00:19:34,069 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (3.1.1)
+2021-10-18 00:19:34,070 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (2020.11.13)
+2021-10-18 00:19:34,071 > Requirement already satisfied: wrapt<1.13,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.12.1)
+2021-10-18 00:19:35,359 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (0.5.0)
+2021-10-18 00:19:35,362 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.0.0)
+2021-10-18 00:19:35,363 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (2.0)
+2021-10-18 00:19:35,364 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.0.1)
+2021-10-18 00:19:35,365 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.1.0)
+2021-10-18 00:19:35,365 > Requirement already satisfied: cachelib<0.2,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (0.1.1)
+2021-10-18 00:19:36,760 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (3.5)
+2021-10-18 00:19:36,762 > Requirement already satisfied: netaddr<0.9,>=0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (0.8.0)
+2021-10-18 00:19:36,763 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (0.10.4)
+2021-10-18 00:19:38,071 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.2.0)
+2021-10-18 00:19:39,503 > Requirement already satisfied: semantic_version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (2.8.5)
+2021-10-18 00:19:39,506 > Requirement already satisfied: psutil<6,>=5.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (5.8.0)
+2021-10-18 00:19:39,508 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (7.1.2)
+2021-10-18 00:19:39,510 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (0.18.2)
+2021-10-18 00:19:41,750 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.0.7)
+2021-10-18 00:19:41,753 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.1.8)
+2021-10-18 00:19:41,754 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (1.4)
+2021-10-18 00:19:52,223 > Requirement already satisfied: unidecode in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint==1.7.0) (0.4.21)
+2021-10-18 00:19:52,226 > Collecting sarge==0.1.6
+2021-10-18 00:19:52,227 > Downloading https://www.piwheels.org/simple/sarge/sarge-0.1.6-py3-none-any.whl (19 kB)
+2021-10-18 00:19:52,228 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint==1.7.0) (0.1.2)
+2021-10-18 00:19:52,229 > Collecting colorlog<6,>=5.0.1
+2021-10-18 00:19:52,229 > Downloading https://www.piwheels.org/simple/colorlog/colorlog-5.0.1-py2.py3-none-any.whl (10 kB)
+2021-10-18 00:19:52,230 > Collecting emoji<2,>=1.4.2
+2021-10-18 00:19:52,231 > Downloading https://www.piwheels.org/simple/emoji/emoji-1.6.1-py3-none-any.whl (170 kB)
+2021-10-18 00:19:52,231 > Collecting feedparser<7,>=6.0.8
+2021-10-18 00:19:52,232 > Downloading https://www.piwheels.org/simple/feedparser/feedparser-6.0.8-py3-none-any.whl (81 kB)
+2021-10-18 00:19:52,232 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.8->OctoPrint==1.7.0) (1.0.0)
+2021-10-18 00:19:52,233 > Collecting flask<2,>=1.1.4
+2021-10-18 00:19:52,234 > Downloading https://www.piwheels.org/simple/flask/Flask-1.1.4-py2.py3-none-any.whl (94 kB)
+2021-10-18 00:19:52,234 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint==1.7.0) (2.0)
+2021-10-18 00:19:52,235 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint==1.7.0) (2020.5)
+2021-10-18 00:19:52,235 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint==1.7.0) (2.9.0)
+2021-10-18 00:19:52,236 > Collecting immutabledict<3,>=2.1
+2021-10-18 00:19:52,237 > Downloading https://www.piwheels.org/simple/immutabledict/immutabledict-2.2.1-py3-none-any.whl (4.0 kB)
+2021-10-18 00:19:52,237 > Collecting Jinja2<3,>=2.11.3
+2021-10-18 00:19:52,238 > Downloading https://www.piwheels.org/simple/jinja2/Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+2021-10-18 00:19:52,239 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint==1.7.0) (51.1.2)
+2021-10-18 00:19:52,240 > Collecting netifaces<1,>=0.11
+2021-10-18 00:19:52,240 > Downloading https://www.piwheels.org/simple/netifaces/netifaces-0.11.0-cp37-cp37m-linux_armv7l.whl (39 kB)
+2021-10-18 00:19:52,241 > Collecting OctoPrint-FirmwareCheck>=2021.10.11
+2021-10-18 00:19:52,241 > Downloading https://www.piwheels.org/simple/octoprint-firmwarecheck/OctoPrint_FirmwareCheck-2021.10.11-py2.py3-none-any.whl (36 kB)
+2021-10-18 00:19:52,242 > Collecting pathvalidate<3,>=2.4.1
+2021-10-18 00:19:52,242 > Downloading https://www.piwheels.org/simple/pathvalidate/pathvalidate-2.5.0-py3-none-any.whl (19 kB)
+2021-10-18 00:19:52,243 > Collecting pkginfo<2,>=1.7.1
+2021-10-18 00:19:52,244 > Downloading https://www.piwheels.org/simple/pkginfo/pkginfo-1.7.1-py2.py3-none-any.whl (25 kB)
+2021-10-18 00:19:52,244 > Collecting PyYAML<6,>=5.4.1
+2021-10-18 00:19:52,245 > Downloading https://www.piwheels.org/simple/pyyaml/PyYAML-5.4.1-cp37-cp37m-linux_armv7l.whl (45 kB)
+2021-10-18 00:19:52,245 > Collecting requests<3,>=2.26.0
+2021-10-18 00:19:52,246 > Downloading https://www.piwheels.org/simple/requests/requests-2.26.0-py2.py3-none-any.whl (62 kB)
+2021-10-18 00:19:53,786 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint==1.7.0) (2020.12.5)
+2021-10-18 00:19:53,791 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint==1.7.0) (1.26.2)
+2021-10-18 00:19:53,792 > Requirement already satisfied: idna<4,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint==1.7.0) (2.10)
+2021-10-18 00:19:53,793 > Collecting charset-normalizer~=2.0.0
+2021-10-18 00:19:53,794 > Downloading https://www.piwheels.org/simple/charset-normalizer/charset_normalizer-2.0.7-py3-none-any.whl (42 kB)
+2021-10-18 00:19:53,795 > Collecting sentry-sdk<2,>=1.3.1
+2021-10-18 00:19:53,795 > Downloading https://www.piwheels.org/simple/sentry-sdk/sentry_sdk-1.4.3-py2.py3-none-any.whl (141 kB)
+2021-10-18 00:19:54,799 > Collecting tornado<7,>=6
+2021-10-18 00:19:54,800 > Downloading https://www.piwheels.org/simple/tornado/tornado-6.1-cp37-cp37m-linux_armv7l.whl (428 kB)
+2021-10-18 00:19:57,000 > Collecting websocket-client<1,>=0.59
+2021-10-18 00:19:57,002 > Downloading https://www.piwheels.org/simple/websocket-client/websocket_client-0.59.0-py2.py3-none-any.whl (67 kB)
+2021-10-18 00:19:57,004 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.59->OctoPrint==1.7.0) (1.15.0)
+2021-10-18 00:19:57,005 > Collecting zeroconf<0.34,>=0.33
+2021-10-18 00:19:57,006 > Downloading https://www.piwheels.org/simple/zeroconf/zeroconf-0.33.4-py3-none-any.whl (89 kB)
+2021-10-18 00:19:57,006 > Requirement already satisfied: ifaddr>=0.1.7 in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.34,>=0.33->OctoPrint==1.7.0) (0.1.7)
+2021-10-18 00:19:57,007 > Building wheels for collected packages: OctoPrint
+2021-10-18 00:19:57,007 > Building wheel for OctoPrint (setup.py): started
+2021-10-18 00:20:10,020 > Building wheel for OctoPrint (setup.py): finished with status 'done'
+2021-10-18 00:20:10,023 > Created wheel for OctoPrint: filename=OctoPrint-1.7.0-py2.py3-none-any.whl size=3883425 sha256=28b6376e6bd6d1ba40a36f0818d6db0a88265dd0fcf83932eba86fb102b11823
+2021-10-18 00:20:10,024 > Stored in directory: /tmp/pip-ephem-wheel-cache-3ciwbixm/wheels/5a/41/e6/fc6c4a5cbe87c373fde9494fa4bbb310a60a5a8f61e4e073cd
+2021-10-18 00:20:10,025 > Successfully built OctoPrint
+2021-10-18 00:20:13,525 > Installing collected packages: Jinja2, flask, charset-normalizer, zeroconf, websocket-client, tornado, sentry-sdk, sarge, requests, PyYAML, pkginfo, pathvalidate, OctoPrint-FirmwareCheck, netifaces, immutabledict, feedparser, emoji, colorlog, OctoPrint
+2021-10-18 00:20:13,526 > Attempting uninstall: Jinja2
+2021-10-18 00:20:13,526 > Found existing installation: Jinja2 2.11.2
+2021-10-18 00:20:13,527 > Uninstalling Jinja2-2.11.2:
+2021-10-18 00:20:13,528 > Successfully uninstalled Jinja2-2.11.2
+2021-10-18 00:20:13,531 > Attempting uninstall: flask
+2021-10-18 00:20:13,532 > Found existing installation: Flask 1.1.2
+2021-10-18 00:20:13,533 > Uninstalling Flask-1.1.2:
+2021-10-18 00:20:13,533 > Successfully uninstalled Flask-1.1.2
+2021-10-18 00:20:13,534 > Attempting uninstall: zeroconf
+2021-10-18 00:20:13,535 > Found existing installation: zeroconf 0.24.5
+2021-10-18 00:20:13,536 > Uninstalling zeroconf-0.24.5:
+2021-10-18 00:20:15,260 > Successfully uninstalled zeroconf-0.24.5
+2021-10-18 00:20:15,261 > Attempting uninstall: websocket-client
+2021-10-18 00:20:15,262 > Found existing installation: websocket-client 0.57.0
+2021-10-18 00:20:15,262 > Uninstalling websocket-client-0.57.0:
+2021-10-18 00:20:15,263 > Successfully uninstalled websocket-client-0.57.0
+2021-10-18 00:20:15,263 > Attempting uninstall: tornado
+2021-10-18 00:20:15,264 > Found existing installation: tornado 5.1.1
+2021-10-18 00:20:15,265 > Uninstalling tornado-5.1.1:
+2021-10-18 00:20:15,265 > Successfully uninstalled tornado-5.1.1
+2021-10-18 00:20:16,807 > Attempting uninstall: sentry-sdk
+2021-10-18 00:20:16,808 > Found existing installation: sentry-sdk 0.19.5
+2021-10-18 00:20:16,809 > Uninstalling sentry-sdk-0.19.5:
+2021-10-18 00:20:16,810 > Successfully uninstalled sentry-sdk-0.19.5
+2021-10-18 00:20:18,159 > Attempting uninstall: sarge
+2021-10-18 00:20:18,162 > Found existing installation: sarge 0.1.5.post0
+2021-10-18 00:20:18,163 > Uninstalling sarge-0.1.5.post0:
+2021-10-18 00:20:18,163 > Successfully uninstalled sarge-0.1.5.post0
+2021-10-18 00:20:18,164 > Attempting uninstall: requests
+2021-10-18 00:20:18,164 > Found existing installation: requests 2.25.1
+2021-10-18 00:20:18,165 > Uninstalling requests-2.25.1:
+2021-10-18 00:20:18,165 > Successfully uninstalled requests-2.25.1
+2021-10-18 00:20:18,166 > Attempting uninstall: PyYAML
+2021-10-18 00:20:18,166 > Found existing installation: PyYAML 5.3.1
+2021-10-18 00:20:18,167 > Uninstalling PyYAML-5.3.1:
+2021-10-18 00:20:18,167 > Successfully uninstalled PyYAML-5.3.1
+2021-10-18 00:20:19,171 > Attempting uninstall: pkginfo
+2021-10-18 00:20:19,174 > Found existing installation: pkginfo 1.6.1
+2021-10-18 00:20:19,175 > Uninstalling pkginfo-1.6.1:
+2021-10-18 00:20:19,175 > Successfully uninstalled pkginfo-1.6.1
+2021-10-18 00:20:20,490 > Attempting uninstall: OctoPrint-FirmwareCheck
+2021-10-18 00:20:20,492 > Found existing installation: OctoPrint-FirmwareCheck 2021.8.11
+2021-10-18 00:20:20,493 > Uninstalling OctoPrint-FirmwareCheck-2021.8.11:
+2021-10-18 00:20:20,494 > Successfully uninstalled OctoPrint-FirmwareCheck-2021.8.11
+2021-10-18 00:20:21,653 > Attempting uninstall: netifaces
+2021-10-18 00:20:21,654 > Found existing installation: netifaces 0.10.9
+2021-10-18 00:20:21,655 > Uninstalling netifaces-0.10.9:
+2021-10-18 00:20:21,655 > Successfully uninstalled netifaces-0.10.9
+2021-10-18 00:20:23,180 > Attempting uninstall: immutabledict
+2021-10-18 00:20:23,181 > Found existing installation: immutabledict 1.3.0
+2021-10-18 00:20:23,181 > Uninstalling immutabledict-1.3.0:
+2021-10-18 00:20:23,182 > Successfully uninstalled immutabledict-1.3.0
+2021-10-18 00:20:23,182 > Attempting uninstall: feedparser
+2021-10-18 00:20:23,183 > Found existing installation: feedparser 6.0.2
+2021-10-18 00:20:23,183 > Uninstalling feedparser-6.0.2:
+2021-10-18 00:20:23,184 > Successfully uninstalled feedparser-6.0.2
+2021-10-18 00:20:23,184 > Attempting uninstall: emoji
+2021-10-18 00:20:23,185 > Found existing installation: emoji 0.6.0
+2021-10-18 00:20:23,186 > Uninstalling emoji-0.6.0:
+2021-10-18 00:20:23,186 > Successfully uninstalled emoji-0.6.0
+2021-10-18 00:20:24,208 > Attempting uninstall: OctoPrint
+2021-10-18 00:20:24,209 > Found existing installation: OctoPrint 1.6.1
+2021-10-18 00:20:25,213 > Uninstalling OctoPrint-1.6.1:
+2021-10-18 00:20:25,213 > Successfully uninstalled OctoPrint-1.6.1
+2021-10-18 00:20:28,521 > Successfully installed Jinja2-2.11.3 OctoPrint-1.7.0 OctoPrint-FirmwareCheck-2021.10.11 PyYAML-5.4.1 charset-normalizer-2.0.7 colorlog-5.0.1 emoji-1.6.1 feedparser-6.0.8 flask-1.1.4 immutabledict-2.2.1 netifaces-0.11.0 pathvalidate-2.5.0 pkginfo-1.7.1 requests-2.26.0 sarge-0.1.6 sentry-sdk-1.4.3 tornado-6.1 websocket-client-0.59.0 zeroconf-0.33.4
+2021-10-18 00:20:29,783   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.10.11.zip --no-cache-dir
+2021-10-18 00:20:32,823 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-18 00:20:32,829 > Collecting https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.10.11.zip
+2021-10-18 00:20:33,955 > Downloading https://github.com/OctoPrint/OctoPrint-FirmwareCheck/archive/2021.10.11.zip (71 kB)
+2021-10-18 00:20:39,306   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/1.12.0.zip --no-cache-dir
+2021-10-18 00:20:42,346 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-18 00:20:42,349 > Collecting https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/1.12.0.zip
+2021-10-18 00:20:43,621 > Downloading https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/1.12.0.zip
+2021-10-18 00:20:45,887 > Requirement already satisfied: OctoPrint in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint-FirmwareUpdater==1.12.0) (1.7.0)
+2021-10-18 00:20:45,890 > Requirement already satisfied: pyserial>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint-FirmwareUpdater==1.12.0) (3.5)
+2021-10-18 00:20:47,195 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (5.4.1)
+2021-10-18 00:20:47,197 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.1.1)
+2021-10-18 00:20:47,199 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2021.2.23)
+2021-10-18 00:20:47,200 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.0.1)
+2021-10-18 00:20:47,201 > Requirement already satisfied: websocket-client<1,>=0.59 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.59.0)
+2021-10-18 00:20:47,201 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2020.11.13)
+2021-10-18 00:20:47,202 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.18.2)
+2021-10-18 00:20:47,203 > Requirement already satisfied: cachelib<0.2,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.1.1)
+2021-10-18 00:20:47,203 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.4)
+2021-10-18 00:20:47,204 > Requirement already satisfied: OctoPrint-PiSupport>=2021.8.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2021.8.2)
+2021-10-18 00:20:47,205 > Requirement already satisfied: netaddr<0.9,>=0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.8.0)
+2021-10-18 00:20:47,205 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (3.1.1)
+2021-10-18 00:20:47,206 > Requirement already satisfied: feedparser<7,>=6.0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (6.0.8)
+2021-10-18 00:20:47,206 > Requirement already satisfied: sarge==0.1.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.1.6)
+2021-10-18 00:20:47,207 > Requirement already satisfied: netifaces<1,>=0.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.11.0)
+2021-10-18 00:20:47,208 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.33.4)
+2021-10-18 00:20:47,208 > Requirement already satisfied: tornado<7,>=6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (6.1)
+2021-10-18 00:20:47,209 > Requirement already satisfied: unidecode in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.4.21)
+2021-10-18 00:20:47,210 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.1.8)
+2021-10-18 00:20:47,210 > Requirement already satisfied: psutil<6,>=5.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (5.8.0)
+2021-10-18 00:20:47,211 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.0.0)
+2021-10-18 00:20:47,211 > Requirement already satisfied: wrapt<1.13,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.12.1)
+2021-10-18 00:20:47,212 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.1.0)
+2021-10-18 00:20:47,213 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.10.4)
+2021-10-18 00:20:47,213 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (7.1.2)
+2021-10-18 00:20:47,214 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.5.0)
+2021-10-18 00:20:47,214 > Requirement already satisfied: flask<2,>=1.1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.1.4)
+2021-10-18 00:20:47,215 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.8.5)
+2021-10-18 00:20:47,215 > Requirement already satisfied: colorlog<6,>=5.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (5.0.1)
+2021-10-18 00:20:47,216 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.7.1)
+2021-10-18 00:20:47,216 > Requirement already satisfied: immutabledict<3,>=2.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.2.1)
+2021-10-18 00:20:47,217 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2021.10.11)
+2021-10-18 00:20:47,218 > Requirement already satisfied: requests<3,>=2.26.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.26.0)
+2021-10-18 00:20:47,219 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.2.0)
+2021-10-18 00:20:47,219 > Requirement already satisfied: emoji<2,>=1.4.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.6.1)
+2021-10-18 00:20:47,220 > Requirement already satisfied: Jinja2<3,>=2.11.3 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.11.3)
+2021-10-18 00:20:47,220 > Requirement already satisfied: sentry-sdk<2,>=1.3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.4.3)
+2021-10-18 00:20:47,221 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.0.7)
+2021-10-18 00:20:47,222 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.0)
+2021-10-18 00:20:47,223 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.5.0)
+2021-10-18 00:20:47,223 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.1.2)
+2021-10-18 00:20:47,226 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.8->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.0.0)
+2021-10-18 00:20:47,227 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.0)
+2021-10-18 00:20:47,228 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2020.5)
+2021-10-18 00:20:47,229 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.9.0)
+2021-10-18 00:20:47,229 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (51.1.2)
+2021-10-18 00:20:48,682 > Requirement already satisfied: idna<4,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.10)
+2021-10-18 00:20:48,685 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.26.2)
+2021-10-18 00:20:48,688 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2020.12.5)
+2021-10-18 00:20:48,689 > Requirement already satisfied: charset-normalizer~=2.0.0 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (2.0.7)
+2021-10-18 00:20:48,690 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.59->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (1.15.0)
+2021-10-18 00:20:48,690 > Requirement already satisfied: ifaddr>=0.1.7 in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->OctoPrint-FirmwareUpdater==1.12.0) (0.1.7)
+2021-10-18 00:20:48,691 > Building wheels for collected packages: OctoPrint-FirmwareUpdater
+2021-10-18 00:20:48,693 > Building wheel for OctoPrint-FirmwareUpdater (setup.py): started
+2021-10-18 00:20:50,730 > Building wheel for OctoPrint-FirmwareUpdater (setup.py): finished with status 'done'
+2021-10-18 00:20:50,732 > Created wheel for OctoPrint-FirmwareUpdater: filename=OctoPrint_FirmwareUpdater-1.12.0-py3-none-any.whl size=54729 sha256=67c8b03c623c02e6eba90bfb0257733c9a251cb7530463597995a3b3e1ba9ec5
+2021-10-18 00:20:50,734 > Stored in directory: /tmp/pip-ephem-wheel-cache-9my0y1w_/wheels/a6/3b/61/e650906db150e83959fd123d3548312d56beb6debe94c4adf8
+2021-10-18 00:20:50,735 > Successfully built OctoPrint-FirmwareUpdater
+2021-10-18 00:20:52,138 > Installing collected packages: OctoPrint-FirmwareUpdater
+2021-10-18 00:20:52,140 > Attempting uninstall: OctoPrint-FirmwareUpdater
+2021-10-18 00:20:52,142 > Found existing installation: OctoPrint-FirmwareUpdater 1.11.0
+2021-10-18 00:20:52,143 > Uninstalling OctoPrint-FirmwareUpdater-1.11.0:
+2021-10-18 00:20:52,143 > Successfully uninstalled OctoPrint-FirmwareUpdater-1.11.0
+2021-10-18 00:20:52,144 > Successfully installed OctoPrint-FirmwareUpdater-1.12.0
+2021-10-18 00:20:52,927   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/gdombiak/OctoPrint-OctoPod/archive/0.3.11.zip --no-cache-dir
+2021-10-18 00:20:55,971 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-18 00:20:55,975 > Collecting https://github.com/gdombiak/OctoPrint-OctoPod/archive/0.3.11.zip
+2021-10-18 00:20:57,028 > Downloading https://github.com/gdombiak/OctoPrint-OctoPod/archive/0.3.11.zip
+2021-10-18 00:21:00,136 > Requirement already satisfied: OctoPrint in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint-OctoPod==0.3.11) (1.7.0)
+2021-10-18 00:21:00,138 > Requirement already satisfied: pillow in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint-OctoPod==0.3.11) (8.3.1)
+2021-10-18 00:21:00,141 > Requirement already satisfied: websocket-client<1,>=0.59 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.59.0)
+2021-10-18 00:21:00,145 > Requirement already satisfied: OctoPrint-PiSupport>=2021.8.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2021.8.2)
+2021-10-18 00:21:00,146 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.10.4)
+2021-10-18 00:21:00,147 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2021.2.23)
+2021-10-18 00:21:00,148 > Requirement already satisfied: requests<3,>=2.26.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2.26.0)
+2021-10-18 00:21:00,149 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (3.5)
+2021-10-18 00:21:00,150 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.1.1)
+2021-10-18 00:21:00,151 > Requirement already satisfied: netaddr<0.9,>=0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.8.0)
+2021-10-18 00:21:00,151 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.0.7)
+2021-10-18 00:21:00,152 > Requirement already satisfied: cachelib<0.2,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.1.1)
+2021-10-18 00:21:00,153 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (7.1.2)
+2021-10-18 00:21:00,155 > Requirement already satisfied: tornado<7,>=6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (6.1)
+2021-10-18 00:21:00,157 > Requirement already satisfied: colorlog<6,>=5.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (5.0.1)
+2021-10-18 00:21:00,158 > Requirement already satisfied: sarge==0.1.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.1.6)
+2021-10-18 00:21:00,160 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.1.8)
+2021-10-18 00:21:00,160 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2021.10.11)
+2021-10-18 00:21:00,161 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.33.4)
+2021-10-18 00:21:00,162 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2020.11.13)
+2021-10-18 00:21:00,163 > Requirement already satisfied: sentry-sdk<2,>=1.3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.4.3)
+2021-10-18 00:21:00,164 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2.0)
+2021-10-18 00:21:00,165 > Requirement already satisfied: wrapt<1.13,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.12.1)
+2021-10-18 00:21:00,166 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (5.4.1)
+2021-10-18 00:21:00,167 > Requirement already satisfied: feedparser<7,>=6.0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (6.0.8)
+2021-10-18 00:21:00,168 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2.5.0)
+2021-10-18 00:21:00,169 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.5.0)
+2021-10-18 00:21:00,170 > Requirement already satisfied: unidecode in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.4.21)
+2021-10-18 00:21:00,171 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.0.1)
+2021-10-18 00:21:00,172 > Requirement already satisfied: emoji<2,>=1.4.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.6.1)
+2021-10-18 00:21:00,173 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.0.0)
+2021-10-18 00:21:00,174 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.4)
+2021-10-18 00:21:00,175 > Requirement already satisfied: Jinja2<3,>=2.11.3 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2.11.3)
+2021-10-18 00:21:00,176 > Requirement already satisfied: psutil<6,>=5.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (5.8.0)
+2021-10-18 00:21:00,177 > Requirement already satisfied: flask<2,>=1.1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.1.4)
+2021-10-18 00:21:00,178 > Requirement already satisfied: immutabledict<3,>=2.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2.2.1)
+2021-10-18 00:21:00,179 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (3.1.1)
+2021-10-18 00:21:00,180 > Requirement already satisfied: netifaces<1,>=0.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.11.0)
+2021-10-18 00:21:00,181 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.1.0)
+2021-10-18 00:21:00,182 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (0.18.2)
+2021-10-18 00:21:00,183 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (2.8.5)
+2021-10-18 00:21:00,184 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.2.0)
+2021-10-18 00:21:00,185 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->OctoPrint-OctoPod==0.3.11) (1.7.1)
+2021-10-18 00:21:00,186 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint->OctoPrint-OctoPod==0.3.11) (0.1.2)
+2021-10-18 00:21:00,187 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.8->OctoPrint->OctoPrint-OctoPod==0.3.11) (1.0.0)
+2021-10-18 00:21:00,188 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->OctoPrint-OctoPod==0.3.11) (2.0)
+2021-10-18 00:21:00,189 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-OctoPod==0.3.11) (2.9.0)
+2021-10-18 00:21:00,190 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-OctoPod==0.3.11) (2020.5)
+2021-10-18 00:21:00,191 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint->OctoPrint-OctoPod==0.3.11) (51.1.2)
+2021-10-18 00:21:01,772 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-OctoPod==0.3.11) (1.26.2)
+2021-10-18 00:21:02,355 > Requirement already satisfied: charset-normalizer~=2.0.0 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-OctoPod==0.3.11) (2.0.7)
+2021-10-18 00:21:02,356 > Requirement already satisfied: idna<4,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-OctoPod==0.3.11) (2.10)
+2021-10-18 00:21:02,357 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->OctoPrint-OctoPod==0.3.11) (2020.12.5)
+2021-10-18 00:21:02,357 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.59->OctoPrint->OctoPrint-OctoPod==0.3.11) (1.15.0)
+2021-10-18 00:21:02,358 > Requirement already satisfied: ifaddr>=0.1.7 in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->OctoPrint-OctoPod==0.3.11) (0.1.7)
+2021-10-18 00:21:02,360 > Building wheels for collected packages: OctoPrint-OctoPod
+2021-10-18 00:21:02,361 > Building wheel for OctoPrint-OctoPod (setup.py): started
+2021-10-18 00:21:03,716 > Building wheel for OctoPrint-OctoPod (setup.py): finished with status 'done'
+2021-10-18 00:21:03,719 > Created wheel for OctoPrint-OctoPod: filename=OctoPrint_OctoPod-0.3.11-py3-none-any.whl size=43448 sha256=6257858c3ed35a612d030e77fb4c026d6a8c57675b5fe62243e94023d27ec6c9
+2021-10-18 00:21:03,721 > Stored in directory: /tmp/pip-ephem-wheel-cache-yx66gxp8/wheels/aa/8c/bf/70ebfa875e955bac1c1b606eef52ff1edb7c1c7735801f86b9
+2021-10-18 00:21:03,721 > Successfully built OctoPrint-OctoPod
+2021-10-18 00:21:05,174 > Installing collected packages: OctoPrint-OctoPod
+2021-10-18 00:21:05,176 > Attempting uninstall: OctoPrint-OctoPod
+2021-10-18 00:21:05,178 > Found existing installation: OctoPrint-OctoPod 0.3.2
+2021-10-18 00:21:05,179 > Uninstalling OctoPrint-OctoPod-0.3.2:
+2021-10-18 00:21:05,180 > Successfully uninstalled OctoPrint-OctoPod-0.3.2
+2021-10-18 00:21:05,180 > Successfully installed OctoPrint-OctoPod-0.3.11
+2021-10-18 00:21:06,022   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/LazeMSS/OctoPrint-UICustomizer/archive/0.1.7.0.zip --no-cache-dir
+2021-10-18 00:21:09,060 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-18 00:21:09,062 > Collecting https://github.com/LazeMSS/OctoPrint-UICustomizer/archive/0.1.7.0.zip
+2021-10-18 00:21:10,067 > Downloading https://github.com/LazeMSS/OctoPrint-UICustomizer/archive/0.1.7.0.zip
+2021-10-18 00:21:14,156 > Requirement already satisfied: OctoPrint in /home/pi/oprint/lib/python3.7/site-packages (from UI-Customizer==0.1.7.0) (1.7.0)
+2021-10-18 00:21:14,160 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2.5.0)
+2021-10-18 00:21:14,161 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2020.11.13)
+2021-10-18 00:21:14,162 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (3.5)
+2021-10-18 00:21:14,162 > Requirement already satisfied: netaddr<0.9,>=0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.8.0)
+2021-10-18 00:21:14,163 > Requirement already satisfied: tornado<7,>=6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (6.1)
+2021-10-18 00:21:14,164 > Requirement already satisfied: OctoPrint-PiSupport>=2021.8.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2021.8.2)
+2021-10-18 00:21:14,164 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.1.0)
+2021-10-18 00:21:14,165 > Requirement already satisfied: psutil<6,>=5.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (5.8.0)
+2021-10-18 00:21:14,165 > Requirement already satisfied: websocket-client<1,>=0.59 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.59.0)
+2021-10-18 00:21:14,166 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.1.1)
+2021-10-18 00:21:14,167 > Requirement already satisfied: Jinja2<3,>=2.11.3 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2.11.3)
+2021-10-18 00:21:14,167 > Requirement already satisfied: feedparser<7,>=6.0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (6.0.8)
+2021-10-18 00:21:14,168 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (3.1.1)
+2021-10-18 00:21:14,168 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.5.0)
+2021-10-18 00:21:14,169 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.1.8)
+2021-10-18 00:21:14,170 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (5.4.1)
+2021-10-18 00:21:14,170 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.4)
+2021-10-18 00:21:14,171 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2.0)
+2021-10-18 00:21:14,172 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.10.4)
+2021-10-18 00:21:14,172 > Requirement already satisfied: colorlog<6,>=5.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (5.0.1)
+2021-10-18 00:21:14,173 > Requirement already satisfied: flask<2,>=1.1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.1.4)
+2021-10-18 00:21:14,174 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2.8.5)
+2021-10-18 00:21:14,174 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (7.1.2)
+2021-10-18 00:21:14,175 > Requirement already satisfied: immutabledict<3,>=2.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2.2.1)
+2021-10-18 00:21:14,175 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.2.0)
+2021-10-18 00:21:14,176 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2021.2.23)
+2021-10-18 00:21:14,176 > Requirement already satisfied: unidecode in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.4.21)
+2021-10-18 00:21:14,177 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.0.0)
+2021-10-18 00:21:14,177 > Requirement already satisfied: cachelib<0.2,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.1.1)
+2021-10-18 00:21:14,178 > Requirement already satisfied: sarge==0.1.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.1.6)
+2021-10-18 00:21:14,179 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2021.10.11)
+2021-10-18 00:21:14,179 > Requirement already satisfied: wrapt<1.13,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.12.1)
+2021-10-18 00:21:14,180 > Requirement already satisfied: emoji<2,>=1.4.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.6.1)
+2021-10-18 00:21:14,181 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.7.1)
+2021-10-18 00:21:14,181 > Requirement already satisfied: requests<3,>=2.26.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (2.26.0)
+2021-10-18 00:21:14,182 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.18.2)
+2021-10-18 00:21:14,182 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.33.4)
+2021-10-18 00:21:14,183 > Requirement already satisfied: sentry-sdk<2,>=1.3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.4.3)
+2021-10-18 00:21:14,183 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.0.1)
+2021-10-18 00:21:14,184 > Requirement already satisfied: netifaces<1,>=0.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (0.11.0)
+2021-10-18 00:21:14,184 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->UI-Customizer==0.1.7.0) (1.0.7)
+2021-10-18 00:21:14,185 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint->UI-Customizer==0.1.7.0) (0.1.2)
+2021-10-18 00:21:14,185 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.8->OctoPrint->UI-Customizer==0.1.7.0) (1.0.0)
+2021-10-18 00:21:14,186 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->UI-Customizer==0.1.7.0) (2.0)
+2021-10-18 00:21:14,187 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->UI-Customizer==0.1.7.0) (2020.5)
+2021-10-18 00:21:14,187 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->UI-Customizer==0.1.7.0) (2.9.0)
+2021-10-18 00:21:14,188 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint->UI-Customizer==0.1.7.0) (51.1.2)
+2021-10-18 00:21:15,612 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.7.0) (2020.12.5)
+2021-10-18 00:21:15,614 > Requirement already satisfied: charset-normalizer~=2.0.0 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.7.0) (2.0.7)
+2021-10-18 00:21:15,616 > Requirement already satisfied: idna<4,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.7.0) (2.10)
+2021-10-18 00:21:15,616 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->UI-Customizer==0.1.7.0) (1.26.2)
+2021-10-18 00:21:15,617 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.59->OctoPrint->UI-Customizer==0.1.7.0) (1.15.0)
+2021-10-18 00:21:15,617 > Requirement already satisfied: ifaddr>=0.1.7 in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->UI-Customizer==0.1.7.0) (0.1.7)
+2021-10-18 00:21:15,618 > Building wheels for collected packages: UI-Customizer
+2021-10-18 00:21:15,619 > Building wheel for UI-Customizer (setup.py): started
+2021-10-18 00:21:17,829 > Building wheel for UI-Customizer (setup.py): finished with status 'done'
+2021-10-18 00:21:17,832 > Created wheel for UI-Customizer: filename=UI_Customizer-0.1.7.0-py3-none-any.whl size=519755 sha256=f3c208a094aea4b1ce00e1ba8293238d9d9b07df9325af048ba5215f4a208744
+2021-10-18 00:21:17,833 > Stored in directory: /tmp/pip-ephem-wheel-cache-n5tw78py/wheels/c0/23/be/b3fe61a6a26d17dfa947982ac5a7378d182117891f55265195
+2021-10-18 00:21:17,833 > Successfully built UI-Customizer
+2021-10-18 00:21:19,054 > Installing collected packages: UI-Customizer
+2021-10-18 00:21:19,055 > Attempting uninstall: UI-Customizer
+2021-10-18 00:21:19,055 > Found existing installation: UI-Customizer 0.1.6.1
+2021-10-18 00:21:19,056 > Uninstalling UI-Customizer-0.1.6.1:
+2021-10-18 00:21:19,056 > Successfully uninstalled UI-Customizer-0.1.6.1
+2021-10-18 00:21:20,169 > Successfully installed UI-Customizer-0.1.7.0
+2021-10-18 00:44:37,468   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check install https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/releases/latest/download/master.zip --no-cache-dir
+2021-10-18 00:44:40,520 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2021-10-18 00:44:40,523 > Collecting https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/releases/latest/download/master.zip
+2021-10-18 00:44:41,911 > Downloading https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/releases/latest/download/master.zip (80 kB)
+2021-10-18 00:44:44,985 > Requirement already satisfied: OctoPrint in /home/pi/oprint/lib/python3.7/site-packages (from DisplayLayerProgress==1.27.1) (1.7.0)
+2021-10-18 00:44:45,065 > Requirement already satisfied: netifaces<1,>=0.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.11.0)
+2021-10-18 00:44:45,066 > Requirement already satisfied: sarge==0.1.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.1.6)
+2021-10-18 00:44:45,067 > Requirement already satisfied: sentry-sdk<2,>=1.3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.4.3)
+2021-10-18 00:44:45,068 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2020.11.13)
+2021-10-18 00:44:45,069 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.1.8)
+2021-10-18 00:44:45,069 > Requirement already satisfied: netaddr<0.9,>=0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.8.0)
+2021-10-18 00:44:45,070 > Requirement already satisfied: zeroconf<0.34,>=0.33 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.33.4)
+2021-10-18 00:44:45,071 > Requirement already satisfied: OctoPrint-PiSupport>=2021.8.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2021.8.2)
+2021-10-18 00:44:45,072 > Requirement already satisfied: pkginfo<2,>=1.7.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.7.1)
+2021-10-18 00:44:45,072 > Requirement already satisfied: emoji<2,>=1.4.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.6.1)
+2021-10-18 00:44:45,073 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2021.2.23)
+2021-10-18 00:44:45,073 > Requirement already satisfied: immutabledict<3,>=2.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2.2.1)
+2021-10-18 00:44:45,074 > Requirement already satisfied: unidecode in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.4.21)
+2021-10-18 00:44:45,074 > Requirement already satisfied: websocket-client<1,>=0.59 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.59.0)
+2021-10-18 00:44:45,075 > Requirement already satisfied: markdown<3.2,>=3.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (3.1.1)
+2021-10-18 00:44:45,076 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (3.5)
+2021-10-18 00:44:45,076 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2.8.5)
+2021-10-18 00:44:45,077 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.1.1)
+2021-10-18 00:44:45,077 > Requirement already satisfied: psutil<6,>=5.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (5.8.0)
+2021-10-18 00:44:45,078 > Requirement already satisfied: PyYAML<6,>=5.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (5.4.1)
+2021-10-18 00:44:45,078 > Requirement already satisfied: requests<3,>=2.26.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2.26.0)
+2021-10-18 00:44:45,079 > Requirement already satisfied: tornado<7,>=6 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (6.1)
+2021-10-18 00:44:45,079 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.4)
+2021-10-18 00:44:45,080 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.10.11 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2021.10.11)
+2021-10-18 00:44:45,080 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.2.0)
+2021-10-18 00:44:45,081 > Requirement already satisfied: future<1,>=0.18.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.18.2)
+2021-10-18 00:44:45,082 > Requirement already satisfied: filetype<2,>=1.0.7 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.0.7)
+2021-10-18 00:44:45,082 > Requirement already satisfied: wrapt<1.13,>=1.12.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.12.1)
+2021-10-18 00:44:45,083 > Requirement already satisfied: watchdog==0.10.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.10.4)
+2021-10-18 00:44:45,083 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.0.1)
+2021-10-18 00:44:45,084 > Requirement already satisfied: Click<8,>=7.1.2 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (7.1.2)
+2021-10-18 00:44:45,084 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2.0)
+2021-10-18 00:44:45,085 > Requirement already satisfied: Jinja2<3,>=2.11.3 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2.11.3)
+2021-10-18 00:44:45,086 > Requirement already satisfied: feedparser<7,>=6.0.8 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (6.0.8)
+2021-10-18 00:44:45,086 > Requirement already satisfied: colorlog<6,>=5.0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (5.0.1)
+2021-10-18 00:44:45,087 > Requirement already satisfied: pathvalidate<3,>=2.4.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (2.5.0)
+2021-10-18 00:44:45,087 > Requirement already satisfied: flask<2,>=1.1.4 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.1.4)
+2021-10-18 00:44:45,088 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.5.0)
+2021-10-18 00:44:45,088 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.0.0)
+2021-10-18 00:44:45,089 > Requirement already satisfied: cachelib<0.2,>=0.1 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (0.1.1)
+2021-10-18 00:44:45,090 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python3.7/site-packages (from OctoPrint->DisplayLayerProgress==1.27.1) (1.1.0)
+2021-10-18 00:44:45,090 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python3.7/site-packages (from watchdog==0.10.4->OctoPrint->DisplayLayerProgress==1.27.1) (0.1.2)
+2021-10-18 00:44:45,091 > Requirement already satisfied: sgmllib3k in /home/pi/oprint/lib/python3.7/site-packages (from feedparser<7,>=6.0.8->OctoPrint->DisplayLayerProgress==1.27.1) (1.0.0)
+2021-10-18 00:44:45,091 > Requirement already satisfied: webassets>=2.0 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->DisplayLayerProgress==1.27.1) (2.0)
+2021-10-18 00:44:45,092 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->DisplayLayerProgress==1.27.1) (2020.5)
+2021-10-18 00:44:45,092 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python3.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->DisplayLayerProgress==1.27.1) (2.9.0)
+2021-10-18 00:44:45,093 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python3.7/site-packages (from markdown<3.2,>=3.1->OctoPrint->DisplayLayerProgress==1.27.1) (51.1.2)
+2021-10-18 00:44:46,453 > Requirement already satisfied: charset-normalizer~=2.0.0 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->DisplayLayerProgress==1.27.1) (2.0.7)
+2021-10-18 00:44:46,454 > Requirement already satisfied: idna<4,>=2.5 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->DisplayLayerProgress==1.27.1) (2.10)
+2021-10-18 00:44:46,454 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->DisplayLayerProgress==1.27.1) (1.26.2)
+2021-10-18 00:44:46,455 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python3.7/site-packages (from requests<3,>=2.26.0->OctoPrint->DisplayLayerProgress==1.27.1) (2020.12.5)
+2021-10-18 00:44:46,459 > Requirement already satisfied: six in /home/pi/oprint/lib/python3.7/site-packages (from websocket-client<1,>=0.59->OctoPrint->DisplayLayerProgress==1.27.1) (1.15.0)
+2021-10-18 00:44:46,460 > Requirement already satisfied: ifaddr>=0.1.7 in /home/pi/oprint/lib/python3.7/site-packages (from zeroconf<0.34,>=0.33->OctoPrint->DisplayLayerProgress==1.27.1) (0.1.7)
+2021-10-18 00:44:46,461 > Building wheels for collected packages: DisplayLayerProgress
+2021-10-18 00:44:46,461 > Building wheel for DisplayLayerProgress (setup.py): started
+2021-10-18 00:44:48,499 > Building wheel for DisplayLayerProgress (setup.py): finished with status 'done'
+2021-10-18 00:44:48,502 > Created wheel for DisplayLayerProgress: filename=DisplayLayerProgress-1.27.1-py3-none-any.whl size=74314 sha256=1d627da42db9931b7906f8fecd0f9446b6b4258925e3eb45ec33414d904b150b
+2021-10-18 00:44:48,502 > Stored in directory: /tmp/pip-ephem-wheel-cache-m3te4ej3/wheels/3d/bd/f9/0407e27d0609d95278626b271636329a14a72abc76be192a38
+2021-10-18 00:44:48,503 > Successfully built DisplayLayerProgress
+2021-10-18 00:44:49,564 > Installing collected packages: DisplayLayerProgress
+2021-10-18 00:44:49,565 > Attempting uninstall: DisplayLayerProgress
+2021-10-18 00:44:49,565 > Found existing installation: DisplayLayerProgress 1.26.0
+2021-10-18 00:44:49,566 > Uninstalling DisplayLayerProgress-1.26.0:
+2021-10-18 00:44:49,567 > Successfully uninstalled DisplayLayerProgress-1.26.0
+2021-10-18 00:44:50,627 > Successfully installed DisplayLayerProgress-1.27.1

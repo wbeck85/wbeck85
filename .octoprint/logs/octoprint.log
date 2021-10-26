@@ -1,0 +1,878 @@
+2021-10-25 22:58:40,909 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2021-10-25 22:58:40,994 - octoprint.server - INFO - --- Log roll over detected ---------------------------------------------------
+2021-10-25 22:58:40,995 - octoprint.server - INFO - OctoPrint 1.7.0
+2021-10-25 22:58:40,999 - octoprint.plugin.core - INFO - 36 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/backup
+|  Bed Leveling Wizard (0.2.4) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_bedlevelingwizard
+|  Bed Visualizer (1.1.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_bedlevelvisualizer
+|  BLTouch Plugin (0.3.4) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_BLTouch
+|  Calibration-Companion (1.0.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_calibrationcompanion
+|  Cancel Objects (0.4.6) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_cancelobject
+|  Continuous Print (1.2.3a0) = /home/pi/oprint/lib/python3.7/site-packages/continuousprint
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/corewizard
+|  Dashboard (1.18.3) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_dashboard
+|  Discovery (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/discovery
+|  DisplayLayerProgress Plugin (1.27.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_DisplayLayerProgress
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/errortracking
+|  Event Manager (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/eventmanager
+| !Filament Manager (1.8.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_filamentmanager
+|  File Check (2021.2.23) (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_file_check
+|  Firmware Check (2021.10.11) (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_firmware_check
+|  Firmware Updater (1.12.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_firmwareupdater
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/logging
+|  Marlin EEPROM Editor (3.1.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_eeprom_marlin
+|  OctoKlipper (0.3.8.3) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_klipper
+| !Octolapse (0.4.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_octolapse
+|  OctoPod Plugin (0.3.11) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_octopod
+|  Pi Support Plugin (2021.8.2) (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_pi_support
+|  Plotly Temp Graph (0.1.2) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_plotlytempgraph
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/softwareupdate
+|  SpoolManager Plugin (1.4.3) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_SpoolManager
+|  UI Customizer (0.1.7.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_uicustomizer
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/virtual_printer
+| !Youtube Timelapse (0.1.8) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_youtube_timelapse
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2021-10-25 22:58:41,020 - octoprint.environment - INFO - Detected environment is Python 3.7.3 under Linux (linux). Details:
+|  hardware:
+|    cores: 4
+|    freq: 1200.0
+|    ram: 847486976
+|  os:
+|    bits: 32
+|    id: linux
+|    platform: linux
+|  plugins:
+|    pi_support:
+|      model: Raspberry Pi 3 Model B Rev 1.2
+|      octopi_version: 0.18.0
+|      throttle_state: '0x0'
+|  python:
+|    pip: 20.3.3
+|    version: 3.7.3
+|    virtualenv: /home/pi/oprint
+2021-10-25 22:58:41,020 - octoprint.server - INFO - ------------------------------------------------------------------------------
+2021-10-25 22:58:41,054 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2021-10-25 22:58:41,056 - octoprint.events.fire - DEBUG - Firing event: ConnectivityChanged (Payload: {'old': False, 'new': True, 'connection': True, 'resolution': True})
+2021-10-25 22:58:41,076 - octoprint.plugins.softwareupdate - INFO - Fetching check overlays from https://plugins.octoprint.org/update_check_overlay.json
+2021-10-25 22:58:41,757 - octoprint.plugins.announcements - INFO - Loaded channel _important from https://octoprint.org/feeds/important.xml in 0.64s
+2021-10-25 22:58:42,458 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from https://plugins.octoprint.org/plugins.json
+2021-10-25 22:58:43,141 - octoprint.plugins.announcements - INFO - Loaded channel _releases from https://octoprint.org/feeds/releases.xml in 0.96s
+2021-10-25 22:58:44,095 - octoprint.plugins.announcements - INFO - Loaded channel _blog from https://octoprint.org/feeds/octoblog.xml in 0.6s
+2021-10-25 22:58:44,463 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python3 -m pip" as command to invoke pip
+2021-10-25 22:58:44,465 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python3.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2021-10-25 22:58:44,466 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2021-10-25 22:58:45,153 - octoprint.plugins.announcements - INFO - Loaded channel _plugins from https://plugins.octoprint.org/feed.xml in 0.71s
+2021-10-25 22:58:46,738 - octoprint.plugins.announcements - INFO - Loaded channel _octopi from https://octoprint.org/feeds/octopi.xml in 0.73s
+2021-10-25 22:58:47,768 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2021-10-25 22:58:48,760 - octoprint.plugins.pluginmanager - INFO - Loaded plugin notices data from https://plugins.octoprint.org/notices.json
+2021-10-25 22:58:59,527 - octoprint.server.preemptive_cache - INFO - ... done in 26.54s
+2021-10-25 22:58:59,528 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'base_url': 'http://192.168.1.25/', 'path': '/', 'query_string': 'l10n=en'}
+2021-10-25 22:59:00,781 - octoprint.server.preemptive_cache - INFO - ... done in 1.25s
+2021-10-25 23:02:00,882 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:02:01,142 - octoprint.plugins.uicustomizer - INFO - New themes found - starting update. 0.2.9.3 != 0.2.9.4 : prusatribute
+2021-10-25 23:02:01,348 - octoprint.plugins.uicustomizer - INFO - Downloaded theme: https://lazemss.github.io/OctoPrint-UICustomizerThemes/css/prusatribute.css
+2021-10-25 23:02:06,932 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:08:35,062 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:08:35,344 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:08:36,733 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.1.157
+2021-10-25 23:08:37,067 - octoprint.events.fire - DEBUG - Firing event: ClientOpened (Payload: {'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:08:39,166 - octoprint.plugins.klipper - INFO -  MCU 'mcu' shutdown: ADC out of range
+
+2021-10-25 23:08:39,172 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: MCU 'mcu' shutdown: ADC out of range
+| Last lines in terminal:
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M117 0% L=-/-
+| Recv: // MCU 'mcu' shutdown: ADC out of range
+| Recv: // This generally occurs when a heater temperature exceeds
+| Recv: // its configured min_temp or max_temp.
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! MCU 'mcu' shutdown: ADC out of range
+2021-10-25 23:08:42,084 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:08:42,086 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:08:42,093 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:08:42,098 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:08:42,099 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:08:42,104 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:08:42,105 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:08:42,106 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:08:42,113 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:41,690 - octoprint.access.users - INFO - Logged in user: will
+2021-10-25 23:10:41,695 - octoprint.server.api - INFO - Actively logging in user will from ::ffff:192.168.1.157
+2021-10-25 23:10:41,715 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': 'will'})
+2021-10-25 23:10:41,788 - octoprint.server.util.flask - INFO - Passively logging in user will from ::ffff:192.168.1.157
+2021-10-25 23:10:41,789 - octoprint.access.users - INFO - Logged in user: will
+2021-10-25 23:10:41,863 - octoprint.server.util.flask.PreemptiveCache - INFO - Adding entry for / and {'path': '/', 'base_url': 'http://192.168.1.183/', 'query_string': 'l10n=en', '_timestamp': 1635217841.8629375, '_count': 1}
+2021-10-25 23:10:41,945 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': 'will'})
+2021-10-25 23:10:43,071 - octoprint.server.util.sockjs - INFO - Client connection closed: ::ffff:192.168.1.157
+2021-10-25 23:10:43,076 - octoprint.events.fire - DEBUG - Firing event: ClientClosed (Payload: {'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:10:44,766 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,767 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,772 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:44,774 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,775 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,780 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:44,829 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,830 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,832 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:44,841 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,842 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,845 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:44,850 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,850 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,854 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:44,858 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,859 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,861 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:44,883 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,883 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,886 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:44,886 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:44,887 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:44,891 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:45,188 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.1.157
+2021-10-25 23:10:45,195 - octoprint.events.fire - DEBUG - Firing event: ClientOpened (Payload: {'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:10:45,255 - octoprint.server.util.flask - INFO - Passively logging in user will from ::ffff:192.168.1.157
+2021-10-25 23:10:45,256 - octoprint.access.users - INFO - Logged in user: will
+2021-10-25 23:10:50,220 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,221 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,224 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,230 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,231 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,234 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,236 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,238 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,243 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,268 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': 'will'})
+2021-10-25 23:10:50,925 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,926 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,928 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,930 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,932 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,934 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,957 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,958 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,959 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,967 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,967 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,969 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,974 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,974 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,977 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,981 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,982 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,983 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:50,997 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:50,997 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:50,999 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:51,000 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:51,002 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:51,005 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:51,698 - octoprint.server.util.sockjs - INFO - User will logged in on the socket from client ::ffff:192.168.1.157
+2021-10-25 23:10:51,707 - octoprint.server.util.sockjs - WARNING - Could not send message to client ::ffff:192.168.1.157: 
+2021-10-25 23:10:51,714 - octoprint.events.fire - DEBUG - Firing event: ClientAuthed (Payload: {'username': 'will', 'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:10:51,731 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Startup
+2021-10-25 23:10:51,732 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Shutdown
+2021-10-25 23:10:51,733 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event ConnectivityChanged
+2021-10-25 23:10:51,733 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Connecting
+2021-10-25 23:10:51,733 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Connected
+2021-10-25 23:10:51,733 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Disconnecting
+2021-10-25 23:10:51,734 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Disconnected
+2021-10-25 23:10:51,734 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrinterStateChanged
+2021-10-25 23:10:51,734 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrinterReset
+2021-10-25 23:10:51,734 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event ClientOpened
+2021-10-25 23:10:51,734 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event ClientClosed
+2021-10-25 23:10:51,735 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event ClientAuthed
+2021-10-25 23:10:51,735 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event ClientDeauthed
+2021-10-25 23:10:51,735 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event UserLoggedIn
+2021-10-25 23:10:51,735 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event UserLoggedOut
+2021-10-25 23:10:51,736 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Upload
+2021-10-25 23:10:51,736 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FileSelected
+2021-10-25 23:10:51,736 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FileDeselected
+2021-10-25 23:10:51,736 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event UpdatedFiles
+2021-10-25 23:10:51,736 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event MetadataAnalysisStarted
+2021-10-25 23:10:51,737 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event MetadataAnalysisFinished
+2021-10-25 23:10:51,737 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event MetadataStatisticsUpdated
+2021-10-25 23:10:51,738 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FileAdded
+2021-10-25 23:10:51,739 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FileRemoved
+2021-10-25 23:10:51,741 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FolderAdded
+2021-10-25 23:10:51,742 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FolderRemoved
+2021-10-25 23:10:51,743 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event TransferStarted
+2021-10-25 23:10:51,745 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event TransferDone
+2021-10-25 23:10:51,746 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event TransferFailed
+2021-10-25 23:10:51,747 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrintStarted
+2021-10-25 23:10:51,749 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrintDone
+2021-10-25 23:10:51,750 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrintFailed
+2021-10-25 23:10:51,751 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrintCancelling
+2021-10-25 23:10:51,752 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrintCancelled
+2021-10-25 23:10:51,754 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrintPaused
+2021-10-25 23:10:51,755 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrintResumed
+2021-10-25 23:10:51,756 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Error
+2021-10-25 23:10:51,758 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PowerOn
+2021-10-25 23:10:51,759 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PowerOff
+2021-10-25 23:10:51,760 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Home
+2021-10-25 23:10:51,761 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event ZChange
+2021-10-25 23:10:51,763 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Waiting
+2021-10-25 23:10:51,764 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Dwelling
+2021-10-25 23:10:51,765 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Cooling
+2021-10-25 23:10:51,766 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Alert
+2021-10-25 23:10:51,768 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Conveyor
+2021-10-25 23:10:51,769 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event Eject
+2021-10-25 23:10:51,771 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event EStop
+2021-10-25 23:10:51,779 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PositionUpdate
+2021-10-25 23:10:51,780 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FirmwareData
+2021-10-25 23:10:51,782 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event ToolChange
+2021-10-25 23:10:51,783 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event RegisteredMessageReceived
+2021-10-25 23:10:51,784 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event CommandSuppressed
+2021-10-25 23:10:51,786 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event InvalidToolReported
+2021-10-25 23:10:51,787 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event FilamentChange
+2021-10-25 23:10:51,788 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event CaptureStart
+2021-10-25 23:10:51,789 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event CaptureDone
+2021-10-25 23:10:51,792 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event CaptureFailed
+2021-10-25 23:10:51,793 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PostRollStart
+2021-10-25 23:10:51,794 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PostRollEnd
+2021-10-25 23:10:51,795 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event MovieRendering
+2021-10-25 23:10:51,796 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event MovieDone
+2021-10-25 23:10:51,796 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event MovieFailed
+2021-10-25 23:10:51,797 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SlicingStarted
+2021-10-25 23:10:51,799 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SlicingDone
+2021-10-25 23:10:51,800 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SlicingFailed
+2021-10-25 23:10:51,801 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SlicingCancelled
+2021-10-25 23:10:51,803 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SlicingProfileAdded
+2021-10-25 23:10:51,804 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SlicingProfileModified
+2021-10-25 23:10:51,806 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SlicingProfileDeleted
+2021-10-25 23:10:51,807 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrinterProfileAdded
+2021-10-25 23:10:51,808 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrinterProfileModified
+2021-10-25 23:10:51,810 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event PrinterProfileDeleted
+2021-10-25 23:10:51,811 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event SettingsUpdated
+2021-10-25 23:10:51,812 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_backup_backup_created
+2021-10-25 23:10:51,813 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_bedlevelvisualizer_mesh_data_collected
+2021-10-25 23:10:51,815 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_firmware_check_warning
+2021-10-25 23:10:51,816 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_pi_support_throttle_state
+2021-10-25 23:10:51,817 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_pluginmanager_install_plugin
+2021-10-25 23:10:51,818 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_pluginmanager_uninstall_plugin
+2021-10-25 23:10:51,819 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_pluginmanager_enable_plugin
+2021-10-25 23:10:51,821 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_pluginmanager_disable_plugin
+2021-10-25 23:10:51,822 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_softwareupdate_update_succeeded
+2021-10-25 23:10:51,823 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x64682990>> for event plugin_softwareupdate_update_failed
+2021-10-25 23:10:53,262 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,263 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,266 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,267 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,268 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,272 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,295 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,295 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,297 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,302 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,303 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,305 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,310 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,311 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,313 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,318 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,319 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,321 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,336 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,337 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,339 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,340 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:10:53,340 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:10:53,344 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:10:53,665 - octoprint.plugins.tracking - INFO - Sent tracking event webui_load, payload: {'browser_name': 'Chrome', 'browser_version': '94.0.4606.81', 'os_name': 'Windows', 'os_version': '10'}
+2021-10-25 23:11:01,352 - octoprint.plugins.klipper - INFO -  MCU 'mcu' shutdown: ADC out of range
+
+2021-10-25 23:11:01,358 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: MCU 'mcu' shutdown: ADC out of range
+| Last lines in terminal:
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: Status
+| Recv: // MCU 'mcu' shutdown: ADC out of range
+| Recv: // This generally occurs when a heater temperature exceeds
+| Recv: // its configured min_temp or max_temp.
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: // Klipper state: Not ready
+| Recv: !! MCU 'mcu' shutdown: ADC out of range
+2021-10-25 23:11:10,881 - octoprint.plugins.klipper - INFO -  MCU 'mcu' shutdown: ADC out of range
+
+2021-10-25 23:11:10,887 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: MCU 'mcu' shutdown: ADC out of range
+| Last lines in terminal:
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: // Klipper state: Not ready
+| Recv: !! MCU 'mcu' shutdown: ADC out of range
+| Recv: ok
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: Status
+| Recv: // MCU 'mcu' shutdown: ADC out of range
+| Recv: // This generally occurs when a heater temperature exceeds
+| Recv: // its configured min_temp or max_temp.
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: // Klipper state: Not ready
+| Recv: !! MCU 'mcu' shutdown: ADC out of range
+2021-10-25 23:13:40,912 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2021-10-25 23:13:41,426 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 953, 'printer_state': 'OPERATIONAL'}
+2021-10-25 23:23:56,633 - octoprint.server.util.sockjs - INFO - Client connection closed: ::ffff:192.168.1.157
+2021-10-25 23:23:56,637 - octoprint.events.fire - DEBUG - Firing event: ClientClosed (Payload: {'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:23:56,688 - octoprint.server - INFO - Shutting down...
+2021-10-25 23:23:56,928 - octoprint.util.comm - ERROR - Unexpected error while reading from serial port
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python3.7/site-packages/octoprint/util/comm.py", line 3940, in _readline
+    ret = self._serial.readline()
+  File "/home/pi/oprint/lib/python3.7/site-packages/octoprint/util/comm.py", line 6605, in readline
+    c = self.read(1)
+  File "/home/pi/oprint/lib/python3.7/site-packages/serial/serialposix.py", line 596, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2021-10-25 23:23:57,038 - octoprint.util.comm - ERROR - Please see https://faq.octoprint.org/serialerror for possible reasons of this.
+2021-10-25 23:23:57,058 - octoprint.util.comm - ERROR - Unexpected error while writing to serial port
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python3.7/site-packages/serial/serialposix.py", line 621, in write
+    n = os.write(self.fd, d)
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python3.7/site-packages/octoprint/util/comm.py", line 4807, in _do_send_without_checksum
+    result = self._serial.write(to_send)
+  File "/home/pi/oprint/lib/python3.7/site-packages/serial/serialposix.py", line 655, in write
+    raise SerialException('write failed: {}'.format(e))
+serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+2021-10-25 23:23:57,100 - octoprint.util.comm - INFO - Changing monitoring state from "Operational" to "Offline after error"
+2021-10-25 23:23:57,131 - octoprint.events.fire - DEBUG - Firing event: UpdatedFiles (Payload: {'type': 'printables'})
+2021-10-25 23:23:57,146 - octoprint.events.fire - DEBUG - Firing event: Disconnected (Payload: None)
+2021-10-25 23:23:57,148 - octoprint.plugins.action_command_notification - INFO - Notifications cleared
+2021-10-25 23:23:57,152 - octoprint.events.fire - DEBUG - Firing event: PrinterStateChanged (Payload: {'state_id': 'OFFLINE', 'state_string': 'Offline'})
+2021-10-25 23:23:57,266 - octoprint.util.comm - INFO - Please see https://faq.octoprint.org/serialerror for possible reasons of this.
+2021-10-25 23:23:57,269 - octoprint.server - INFO - Calling on_shutdown on plugins
+2021-10-25 23:23:57,274 - zeroconf - WARNING - Error with socket 5 (('169.254.61.19', 5353))): [Errno 101] Network is unreachable
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/asyncio/selector_events.py", line 987, in sendto
+    self._sock.sendto(data, addr)
+OSError: [Errno 101] Network is unreachable
+2021-10-25 23:23:57,553 - octoprint.events.fire - DEBUG - Firing event: DisplayLayerProgress_printerStateChanged (Payload: {'updateReason': 'printerStateChanged', 'totalLayer': '-', 'currentLayer': '-', 'lastLayerDuration': '-', 'lastLayerDurationInSeconds': '-', 'averageLayerDuration': '-', 'averageLayerDurationInSeconds': '-', 'currentHeight': '-', 'currentHeightFormatted': '-', 'totalHeight': '-', 'totalHeightFormatted': '-', 'feedrate': '-', 'feedrateG0': '-', 'feedrateG1': '-', 'fanspeed': '-', 'progress': '0', 'm73progress': '', 'printTimeLeft': '-', 'printTimeLeftInSeconds': '-', 'printerState': 'offline', 'estimatedEndTime': '-', 'estimatedChangedFilamentTime': '-', 'changeFilamentTimeLeft': '-', 'changeFilamentTimeLeftInSeconds': 0, 'changeFilamentCount': 0, 'currentFilename': ''})
+2021-10-25 23:23:57,555 - octoprint.events - INFO - Processing shutdown event, this will be our last event
+2021-10-25 23:23:57,556 - octoprint.events.fire - DEBUG - Firing event: Shutdown (Payload: None)
+2021-10-25 23:23:57,557 - octoprint.events - INFO - Event loop shut down
+2021-10-25 23:23:57,774 - octoprint.plugins.tracking - INFO - Sent tracking event shutdown, payload: {}
+2021-10-25 23:23:57,776 - octoprint.server - INFO - Goodbye!
+2021-10-25 23:24:10,358 - octoprint.startup - INFO - ******************************************************************************
+2021-10-25 23:24:10,365 - octoprint.startup - INFO - Starting OctoPrint 1.7.0
+2021-10-25 23:24:10,366 - octoprint.startup - INFO - ******************************************************************************
+2021-10-25 23:24:20,156 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2021-10-25 23:24:20,156 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 1.1.1.1:53 is not working
+2021-10-25 23:24:20,157 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2021-10-25 23:24:20,167 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2021-10-25 23:24:20,273 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2021-10-25 23:24:22,353 - octoprint.plugin.core - INFO - Plugin Youtube Timelapse (0.1.8) is disabled.
+2021-10-25 23:24:22,981 - octoprint.plugin.core - INFO - Plugin Filament Manager (1.8.1) is disabled.
+2021-10-25 23:24:23,305 - octoprint.plugin.core - INFO - Plugin Octolapse (0.4.1) is disabled.
+2021-10-25 23:24:24,389 - octoprint.plugins.errortracking - INFO - Initialized error tracking
+2021-10-25 23:24:24,539 - octoprint.startup - INFO - Added settings overlay from plugin dashboard
+2021-10-25 23:24:24,606 - octoprint.plugin.core - INFO - Found 36 plugin(s) providing 33 mixin implementations, 80 hook handlers
+2021-10-25 23:24:25,562 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2021-10-25 23:24:25,596 - octoprint.server - INFO - Intermediary server started
+2021-10-25 23:24:25,630 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2021-10-25 23:24:25,735 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2021-10-25 23:24:25,737 - octoprint.events - DEBUG - Subscribed listener <function Server.run.<locals>.on_settings_update at 0x6fb671e0> for event SettingsUpdated
+2021-10-25 23:24:25,741 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: "Need(method='role', value='plugin_action_command_notification_show')")
+2021-10-25 23:24:25,742 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: "Need(method='role', value='plugin_action_command_notification_clear')")
+2021-10-25 23:24:25,743 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: "Need(method='role', value='plugin_action_command_prompt_interact')")
+2021-10-25 23:24:25,746 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: "Need(method='role', value='plugin_announcements_read')")
+2021-10-25 23:24:25,748 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: "Need(method='role', value='plugin_announcements_read'), Need(method='role', value='plugin_announcements_manage')")
+2021-10-25 23:24:25,750 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: "Need(method='role', value='plugin_appkeys_admin')")
+2021-10-25 23:24:25,752 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: "Need(method='role', value='plugin_backup_access')")
+2021-10-25 23:24:25,755 - octoprint.server - INFO - Added new permission from plugin dashboard: PLUGIN_DASHBOARD_ADMIN (needs: "Need(method='role', value='plugin_dashboard_admin')")
+2021-10-25 23:24:25,757 - octoprint.server - INFO - Added new permission from plugin eeprom_marlin: PLUGIN_EEPROM_MARLIN_READ (needs: "Need(method='role', value='plugin_eeprom_marlin_read')")
+2021-10-25 23:24:25,759 - octoprint.server - INFO - Added new permission from plugin eeprom_marlin: PLUGIN_EEPROM_MARLIN_EDIT (needs: "Need(method='role', value='plugin_eeprom_marlin_edit')")
+2021-10-25 23:24:25,760 - octoprint.server - INFO - Added new permission from plugin eeprom_marlin: PLUGIN_EEPROM_MARLIN_RESET (needs: "Need(method='role', value='plugin_eeprom_marlin_reset')")
+2021-10-25 23:24:25,762 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: "Need(method='role', value='plugin_firmware_check_display')")
+2021-10-25 23:24:25,764 - octoprint.server - INFO - Added new permission from plugin klipper: PLUGIN_KLIPPER_CONFIG (needs: "Need(method='role', value='plugin_klipper_admin')")
+2021-10-25 23:24:25,766 - octoprint.server - INFO - Added new permission from plugin klipper: PLUGIN_KLIPPER_MACRO (needs: "Need(method='role', value='plugin_klipper_admin')")
+2021-10-25 23:24:25,768 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: "Need(method='role', value='plugin_logging_manage')")
+2021-10-25 23:24:25,770 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: "Need(method='role', value='plugin_pi_support_check')")
+2021-10-25 23:24:25,772 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: "Need(method='role', value='plugin_pluginmanager_manage')")
+2021-10-25 23:24:25,774 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: "Need(method='role', value='plugin_pluginmanager_manage'), Need(method='role', value='plugin_pluginmanager_install')")
+2021-10-25 23:24:25,776 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: "Need(method='role', value='plugin_softwareupdate_check')")
+2021-10-25 23:24:25,778 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: "Need(method='role', value='plugin_softwareupdate_update')")
+2021-10-25 23:24:25,779 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CONFIGURE (needs: "Need(method='role', value='plugin_softwareupdate_configure')")
+2021-10-25 23:24:25,803 - octoprint.events - DEBUG - Subscribed listener <bound method Printer._on_event_MetadataAnalysisFinished of <octoprint.printer.standard.Printer object at 0x6fba2850>> for event MetadataAnalysisFinished
+2021-10-25 23:24:25,804 - octoprint.events - DEBUG - Subscribed listener <bound method Printer._on_event_MetadataStatisticsUpdated of <octoprint.printer.standard.Printer object at 0x6fba2850>> for event MetadataStatisticsUpdated
+2021-10-25 23:24:27,167 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python3 -m pip" as command to invoke pip
+2021-10-25 23:24:28,260 - octoprint.util.pip - INFO - Version of pip is 20.3.3
+2021-10-25 23:24:28,263 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python3.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2021-10-25 23:24:28,264 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2021-10-25 23:24:28,638 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2021-10-25 23:24:28,651 - octoprint.plugins.softwareupdate - INFO - Loaded update log from disk
+2021-10-25 23:24:28,713 - octoprint.plugins.SpoolManager - INFO - Start initializing
+2021-10-25 23:24:28,718 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Init DatabaseManager
+2021-10-25 23:24:28,720 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databasefile '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db' exists: True
+2021-10-25 23:24:28,725 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:24:28,727 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:24:28,748 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:24:28,749 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Check if database-scheme upgrade needed...
+2021-10-25 23:24:28,763 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Current databasescheme: 6
+2021-10-25 23:24:28,763 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - ...Database-scheme upgraded not needed.
+2021-10-25 23:24:28,764 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database created-check done
+2021-10-25 23:24:28,767 - octoprint.plugins.SpoolManager - INFO - Done initializing
+2021-10-25 23:24:28,864 - octoprint.plugins.firmwareupdater - INFO - Python binproto2 package installed: False
+2021-10-25 23:24:28,931 - octoprint.plugins.cancelobject - INFO - No beforegcode defined
+2021-10-25 23:24:28,932 - octoprint.plugins.cancelobject - INFO - No aftergcode defined
+2021-10-25 23:24:28,968 - octoprint.plugins.eeprom_marlin - INFO - EEPROM Data initialised
+2021-10-25 23:24:28,980 - octoprint.plugins.eeprom_marlin - INFO - Backup metadata initialised
+2021-10-25 23:24:28,981 - octoprint.plugins.eeprom_marlin - INFO - All EEPROM editor modules loaded
+2021-10-25 23:24:29,165 - octoprint.plugin.core - INFO - Initialized 33 plugin implementation(s)
+2021-10-25 23:24:49,241 - octoprint.plugins.uicustomizer - ERROR - Failed to download theme: https://lazemss.github.io/OctoPrint-UICustomizerThemes/css/prusatribute.css (HTTPSConnectionPool(host='lazemss.github.io', port=443): Max retries exceeded with url: /OctoPrint-UICustomizerThemes/css/prusatribute.css (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x6fbb0eb0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+2021-10-25 23:24:49,299 - octoprint.plugin.core - INFO - 36 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/backup
+|  Bed Leveling Wizard (0.2.4) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_bedlevelingwizard
+|  Bed Visualizer (1.1.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_bedlevelvisualizer
+|  BLTouch Plugin (0.3.4) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_BLTouch
+|  Calibration-Companion (1.0.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_calibrationcompanion
+|  Cancel Objects (0.4.6) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_cancelobject
+|  Continuous Print (1.2.3a0) = /home/pi/oprint/lib/python3.7/site-packages/continuousprint
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/corewizard
+|  Dashboard (1.18.3) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_dashboard
+|  Discovery (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/discovery
+|  DisplayLayerProgress Plugin (1.27.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_DisplayLayerProgress
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/errortracking
+|  Event Manager (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/eventmanager
+| !Filament Manager (1.8.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_filamentmanager
+|  File Check (2021.2.23) (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_file_check
+|  Firmware Check (2021.10.11) (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_firmware_check
+|  Firmware Updater (1.12.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_firmwareupdater
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/logging
+|  Marlin EEPROM Editor (3.1.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_eeprom_marlin
+|  OctoKlipper (0.3.8.3) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_klipper
+| !Octolapse (0.4.1) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_octolapse
+|  OctoPod Plugin (0.3.11) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_octopod
+|  Pi Support Plugin (2021.8.2) (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_pi_support
+|  Plotly Temp Graph (0.1.2) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_plotlytempgraph
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/softwareupdate
+|  SpoolManager Plugin (1.4.3) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_SpoolManager
+|  UI Customizer (0.1.7.0) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_uicustomizer
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python3.7/site-packages/octoprint/plugins/virtual_printer
+| !Youtube Timelapse (0.1.8) = /home/pi/oprint/lib/python3.7/site-packages/octoprint_youtube_timelapse
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2021-10-25 23:24:49,354 - octoprint.environment - INFO - Detected environment is Python 3.7.3 under Linux (linux). Details:
+|  hardware:
+|    cores: 4
+|    freq: 1200.0
+|    ram: 847486976
+|  os:
+|    bits: 32
+|    id: linux
+|    platform: linux
+|  plugins:
+|    pi_support:
+|      model: Raspberry Pi 3 Model B Rev 1.2
+|      octopi_version: 0.18.0
+|      throttle_state: '0x0'
+|  python:
+|    pip: 20.3.3
+|    version: 3.7.3
+|    virtualenv: /home/pi/oprint
+2021-10-25 23:24:49,375 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2021-10-25 23:24:49,412 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2021-10-25 23:24:50,781 - octoprint.plugins.firmwareupdater - INFO - Setting maximum upload size for /flash to 5243904
+2021-10-25 23:24:50,782 - octoprint.server - INFO - Shutting down intermediary server...
+2021-10-25 23:24:51,151 - octoprint.server - INFO - Intermediary server shut down
+2021-10-25 23:24:51,154 - octoprint.events - INFO - Processing startup event, this is our first event
+2021-10-25 23:24:51,155 - octoprint.events - INFO - Adding 1 events to queue that were held back before startup event
+2021-10-25 23:24:51,158 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2021-10-25 23:24:51,159 - octoprint.events.fire - DEBUG - Firing event: Startup (Payload: None)
+2021-10-25 23:24:51,167 - octoprint.events.fire - DEBUG - Firing event: plugin_pi_support_throttle_state (Payload: {'raw_value': 0, 'current_undervoltage': False, 'past_undervoltage': False, 'current_overheat': False, 'past_overheat': False, 'current_issue': False, 'past_issue': False})
+2021-10-25 23:24:51,160 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2021-10-25 23:24:51,216 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2021-10-25 23:24:51,235 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2021-10-25 23:24:51,238 - octoprint.events.fire - DEBUG - Firing event: Connecting (Payload: None)
+2021-10-25 23:24:51,304 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2021-10-25 23:24:51,307 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 250000
+2021-10-25 23:24:51,309 - octoprint.events.fire - DEBUG - Firing event: PrinterStateChanged (Payload: {'state_id': 'OPEN_SERIAL', 'state_string': 'Opening serial connection'})
+2021-10-25 23:24:51,331 - octoprint.events.fire - DEBUG - Firing event: DisplayLayerProgress_printerStateChanged (Payload: {'updateReason': 'printerStateChanged', 'totalLayer': '-', 'currentLayer': '-', 'lastLayerDuration': '-', 'lastLayerDurationInSeconds': '-', 'averageLayerDuration': '-', 'averageLayerDurationInSeconds': '-', 'currentHeight': '-', 'currentHeightFormatted': '-', 'totalHeight': '-', 'totalHeightFormatted': '-', 'feedrate': '-', 'feedrateG0': '-', 'feedrateG1': '-', 'fanspeed': '-', 'progress': '0', 'm73progress': '', 'printTimeLeft': '-', 'printTimeLeftInSeconds': '-', 'printerState': 'idle', 'estimatedEndTime': '-', 'estimatedChangedFilamentTime': '-', 'changeFilamentTimeLeft': '-', 'changeFilamentTimeLeftInSeconds': 0, 'changeFilamentCount': 0, 'currentFilename': ''})
+2021-10-25 23:24:51,336 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2021-10-25 23:24:51,340 - octoprint.util.comm - ERROR - Could not set low latency mode on serial port, continuing without
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python3.7/site-packages/serial/serialposix.py", line 135, in set_low_latency_mode
+    fcntl.ioctl(self.fd, termios.TIOCGSERIAL, buf)
+OSError: [Errno 25] Inappropriate ioctl for device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python3.7/site-packages/octoprint/util/comm.py", line 3758, in default
+    serial_obj.set_low_latency_mode(True)
+  File "/home/pi/oprint/lib/python3.7/site-packages/serial/serialposix.py", line 146, in set_low_latency_mode
+    raise ValueError('Failed to update ASYNC_LOW_LATENCY flag to {}: {}'.format(low_latency_settings, e))
+ValueError: Failed to update ASYNC_LOW_LATENCY flag to True: [Errno 25] Inappropriate ioctl for device
+2021-10-25 23:24:51,342 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2021-10-25 23:24:51,433 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2021-10-25 23:24:51,440 - octoprint.events.fire - DEBUG - Firing event: PrinterStateChanged (Payload: {'state_id': 'CONNECTING', 'state_string': 'Connecting'})
+2021-10-25 23:24:51,444 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2021-10-25 23:24:51,455 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2021-10-25 23:24:51,460 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2021-10-25 23:24:51,463 - octoprint.events.fire - DEBUG - Firing event: PrinterStateChanged (Payload: {'state_id': 'OPERATIONAL', 'state_string': 'Operational'})
+2021-10-25 23:24:51,564 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2021-10-25 23:24:51,575 - octoprint.plugins.klipper.debug - INFO - Firmware version: v0.9.1-779-g59bd51d2
+2021-10-25 23:24:51,577 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2021-10-25 23:24:51,578 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2021-10-25 23:24:52,176 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance "Octopi-SV03"._http._tcp.local.' for _http._tcp.local.
+2021-10-25 23:24:53,009 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance "Octopi-SV03"._octoprint._tcp.local.' for _octoprint._tcp.local.
+2021-10-25 23:24:53,044 - octoprint.plugins.discovery - INFO - Registered OctoPrint instance "Octopi-SV03" for SSDP
+2021-10-25 23:24:53,085 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2021-10-25 23:24:53,271 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2021-10-25 23:24:54,505 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python3 -m pip" as command to invoke pip
+2021-10-25 23:24:54,512 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python3.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2021-10-25 23:24:54,516 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2021-10-25 23:24:54,546 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 8.0GB. That is considered sufficient for updating.
+2021-10-25 23:24:54,547 - octoprint.plugins.softwareupdate - INFO - Not fetching check overlays, we are offline
+2021-10-25 23:24:55,997 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2021-10-25 23:25:07,914 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python3 -m pip" as command to invoke pip
+2021-10-25 23:25:07,917 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python3.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2021-10-25 23:25:07,917 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2021-10-25 23:25:08,121 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2021-10-25 23:25:08,131 - octoprint.plugins.SpoolManager - INFO - Plugin-State: filamentmanager=disabled 
+2021-10-25 23:25:08,131 - octoprint.plugins.bedlevelvisualizer - INFO - OctoPrint-BedLevelVisualizer loaded!
+2021-10-25 23:25:08,132 - octoprint.plugins.calibrationcompanion - INFO - Initializing Calibration Companion Plugin!
+2021-10-25 23:25:08,133 - octoprint.plugins.continuousprint - INFO - Continuous Print Plugin started
+2021-10-25 23:25:08,133 - octoprint.plugins.dashboard - INFO - Dashboard started
+2021-10-25 23:25:08,139 - octoprint.plugins.octopod - INFO - OctoPod loaded!
+2021-10-25 23:25:08,158 - octoprint.plugins.uicustomizer - INFO - UI Customizer is initialized.
+2021-10-25 23:25:09,228 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'base_url': 'http://192.168.1.183/', 'path': '/', 'query_string': 'l10n=en'}
+2021-10-25 23:25:11,506 - octoprint.plugins.octopod - INFO - Could not send Silent job message: HTTPConnectionPool(host='octopodprint.com', port=80): Max retries exceeded with url: //v1/push_printer (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x6c6fadb0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) State: Operational
+2021-10-25 23:25:11,507 - octoprint.events.fire - DEBUG - Firing event: DisplayLayerProgress_printerStateChanged (Payload: {'updateReason': 'printerStateChanged', 'totalLayer': '-', 'currentLayer': '-', 'lastLayerDuration': '-', 'lastLayerDurationInSeconds': '-', 'averageLayerDuration': '-', 'averageLayerDurationInSeconds': '-', 'currentHeight': '-', 'currentHeightFormatted': '-', 'totalHeight': '-', 'totalHeightFormatted': '-', 'feedrate': '-', 'feedrateG0': '-', 'feedrateG1': '-', 'fanspeed': '-', 'progress': '0', 'm73progress': '', 'printTimeLeft': '-', 'printTimeLeftInSeconds': '-', 'printerState': 'operational', 'estimatedEndTime': '-', 'estimatedChangedFilamentTime': '-', 'changeFilamentTimeLeft': '-', 'changeFilamentTimeLeftInSeconds': 0, 'changeFilamentCount': 0, 'currentFilename': ''})
+2021-10-25 23:25:11,510 - octoprint.events.fire - DEBUG - Firing event: Connected (Payload: {'port': '/tmp/printer', 'baudrate': 250000})
+2021-10-25 23:25:11,515 - octoprint.plugins.firmwareupdater - INFO - Got CONNECTED event
+2021-10-25 23:25:11,518 - octoprint.plugins.firmwareupdater - INFO - Run postflash flag is not set
+2021-10-25 23:25:11,530 - octoprint.events.fire - DEBUG - Firing event: FirmwareData (Payload: {'name': 'Klipper', 'data': {'FIRMWARE_VERSION': 'v0.9.1-779-g59bd51d2', 'FIRMWARE_NAME': 'Klipper'}})
+2021-10-25 23:25:48,058 - octoprint.server.preemptive_cache - INFO - ... done in 28.03s
+2021-10-25 23:30:21,742 - octoprint.util.comm - ERROR - Unexpected error while reading from serial port
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python3.7/site-packages/octoprint/util/comm.py", line 3940, in _readline
+    ret = self._serial.readline()
+  File "/home/pi/oprint/lib/python3.7/site-packages/octoprint/util/comm.py", line 6605, in readline
+    c = self.read(1)
+  File "/home/pi/oprint/lib/python3.7/site-packages/serial/serialposix.py", line 596, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2021-10-25 23:30:21,805 - octoprint.util.comm - ERROR - Please see https://faq.octoprint.org/serialerror for possible reasons of this.
+2021-10-25 23:30:21,839 - octoprint.util.comm - INFO - Changing monitoring state from "Operational" to "Offline after error"
+2021-10-25 23:30:21,841 - octoprint.events.fire - DEBUG - Firing event: UpdatedFiles (Payload: {'type': 'printables'})
+2021-10-25 23:30:21,844 - octoprint.events.fire - DEBUG - Firing event: Disconnected (Payload: None)
+2021-10-25 23:30:21,845 - octoprint.plugins.action_command_notification - INFO - Notifications cleared
+2021-10-25 23:30:21,847 - octoprint.events.fire - DEBUG - Firing event: PrinterStateChanged (Payload: {'state_id': 'OFFLINE', 'state_string': 'Offline'})
+2021-10-25 23:30:22,191 - octoprint.events.fire - DEBUG - Firing event: DisplayLayerProgress_printerStateChanged (Payload: {'updateReason': 'printerStateChanged', 'totalLayer': '-', 'currentLayer': '-', 'lastLayerDuration': '-', 'lastLayerDurationInSeconds': '-', 'averageLayerDuration': '-', 'averageLayerDurationInSeconds': '-', 'currentHeight': '-', 'currentHeightFormatted': '-', 'totalHeight': '-', 'totalHeightFormatted': '-', 'feedrate': '-', 'feedrateG0': '-', 'feedrateG1': '-', 'fanspeed': '-', 'progress': '0', 'm73progress': '', 'printTimeLeft': '-', 'printTimeLeftInSeconds': '-', 'printerState': 'offline', 'estimatedEndTime': '-', 'estimatedChangedFilamentTime': '-', 'changeFilamentTimeLeft': '-', 'changeFilamentTimeLeftInSeconds': 0, 'changeFilamentCount': 0, 'currentFilename': ''})
+2021-10-25 23:34:14,205 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2021-10-25 23:34:14,214 - octoprint.events.fire - DEBUG - Firing event: ConnectivityChanged (Payload: {'old': False, 'new': True, 'connection': True, 'resolution': True})
+2021-10-25 23:34:14,303 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2021-10-25 23:34:17,262 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2021-10-25 23:34:17,524 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2021-10-25 23:34:26,715 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:34:26,989 - octoprint.plugins.uicustomizer - INFO - New themes found - starting update. 0.2.9.3 != 0.2.9.4 : prusatribute
+2021-10-25 23:34:27,228 - octoprint.plugins.uicustomizer - INFO - Downloaded theme: https://lazemss.github.io/OctoPrint-UICustomizerThemes/css/prusatribute.css
+2021-10-25 23:34:27,243 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:34:27,314 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.1.157
+2021-10-25 23:34:27,646 - octoprint.events.fire - DEBUG - Firing event: ClientOpened (Payload: {'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:34:32,660 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:32,661 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:32,664 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:32,673 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:32,674 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:32,676 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:32,680 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:32,682 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:32,687 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:38,713 - octoprint.access.users - INFO - Logged in user: will
+2021-10-25 23:34:38,717 - octoprint.server.api - INFO - Actively logging in user will from ::ffff:192.168.1.157
+2021-10-25 23:34:38,738 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': 'will'})
+2021-10-25 23:34:38,838 - octoprint.server.util.flask - INFO - Passively logging in user will from ::ffff:192.168.1.157
+2021-10-25 23:34:38,839 - octoprint.access.users - INFO - Logged in user: will
+2021-10-25 23:34:38,892 - octoprint.server.util.flask.PreemptiveCache - INFO - Adding entry for / and {'path': '/', 'base_url': 'http://192.168.1.26/', 'query_string': 'l10n=en', '_timestamp': 1635219278.892007, '_count': 1}
+2021-10-25 23:34:38,980 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': 'will'})
+2021-10-25 23:34:41,306 - octoprint.server.util.sockjs - INFO - Client connection closed: ::ffff:192.168.1.157
+2021-10-25 23:34:41,309 - octoprint.events.fire - DEBUG - Firing event: ClientClosed (Payload: {'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:34:42,875 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,875 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,878 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:42,879 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,880 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,882 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:42,914 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,915 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,916 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:42,923 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,923 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,926 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:42,930 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,931 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,932 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:42,938 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,938 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,941 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:42,953 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,954 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,955 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:42,958 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:42,960 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:42,963 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:43,249 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.1.157
+2021-10-25 23:34:43,257 - octoprint.events.fire - DEBUG - Firing event: ClientOpened (Payload: {'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:34:43,292 - octoprint.server.util.flask - INFO - Passively logging in user will from ::ffff:192.168.1.157
+2021-10-25 23:34:43,293 - octoprint.access.users - INFO - Logged in user: will
+2021-10-25 23:34:48,280 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,281 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,284 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,290 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,292 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,296 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,297 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,298 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,305 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,333 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': 'will'})
+2021-10-25 23:34:48,861 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,861 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,863 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,865 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,867 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,869 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,893 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,894 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,895 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,902 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,903 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,905 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,910 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,911 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,912 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,917 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,918 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,920 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,933 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,934 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,935 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:48,937 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:48,939 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:48,942 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:49,583 - octoprint.server.util.sockjs - INFO - User will logged in on the socket from client ::ffff:192.168.1.157
+2021-10-25 23:34:49,591 - octoprint.server.util.sockjs - WARNING - Could not send message to client ::ffff:192.168.1.157: 
+2021-10-25 23:34:49,598 - octoprint.events.fire - DEBUG - Firing event: ClientAuthed (Payload: {'username': 'will', 'remoteAddress': '::ffff:192.168.1.157'})
+2021-10-25 23:34:49,607 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Startup
+2021-10-25 23:34:49,608 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Shutdown
+2021-10-25 23:34:49,609 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event ConnectivityChanged
+2021-10-25 23:34:49,610 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Connecting
+2021-10-25 23:34:49,610 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Connected
+2021-10-25 23:34:49,610 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Disconnecting
+2021-10-25 23:34:49,610 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Disconnected
+2021-10-25 23:34:49,611 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrinterStateChanged
+2021-10-25 23:34:49,611 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrinterReset
+2021-10-25 23:34:49,611 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event ClientOpened
+2021-10-25 23:34:49,611 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event ClientClosed
+2021-10-25 23:34:49,611 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event ClientAuthed
+2021-10-25 23:34:49,612 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event ClientDeauthed
+2021-10-25 23:34:49,612 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event UserLoggedIn
+2021-10-25 23:34:49,612 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event UserLoggedOut
+2021-10-25 23:34:49,612 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Upload
+2021-10-25 23:34:49,613 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FileSelected
+2021-10-25 23:34:49,613 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FileDeselected
+2021-10-25 23:34:49,613 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event UpdatedFiles
+2021-10-25 23:34:49,613 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event MetadataAnalysisStarted
+2021-10-25 23:34:49,614 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event MetadataAnalysisFinished
+2021-10-25 23:34:49,614 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event MetadataStatisticsUpdated
+2021-10-25 23:34:49,614 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FileAdded
+2021-10-25 23:34:49,628 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FileRemoved
+2021-10-25 23:34:49,629 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FolderAdded
+2021-10-25 23:34:49,629 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FolderRemoved
+2021-10-25 23:34:49,629 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event TransferStarted
+2021-10-25 23:34:49,629 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event TransferDone
+2021-10-25 23:34:49,630 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event TransferFailed
+2021-10-25 23:34:49,630 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrintStarted
+2021-10-25 23:34:49,630 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrintDone
+2021-10-25 23:34:49,630 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrintFailed
+2021-10-25 23:34:49,631 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrintCancelling
+2021-10-25 23:34:49,631 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrintCancelled
+2021-10-25 23:34:49,631 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrintPaused
+2021-10-25 23:34:49,631 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrintResumed
+2021-10-25 23:34:49,632 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Error
+2021-10-25 23:34:49,632 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PowerOn
+2021-10-25 23:34:49,632 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PowerOff
+2021-10-25 23:34:49,632 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Home
+2021-10-25 23:34:49,632 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event ZChange
+2021-10-25 23:34:49,633 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Waiting
+2021-10-25 23:34:49,633 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Dwelling
+2021-10-25 23:34:49,633 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Cooling
+2021-10-25 23:34:49,633 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Alert
+2021-10-25 23:34:49,635 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Conveyor
+2021-10-25 23:34:49,641 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event Eject
+2021-10-25 23:34:49,643 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event EStop
+2021-10-25 23:34:49,644 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PositionUpdate
+2021-10-25 23:34:49,646 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FirmwareData
+2021-10-25 23:34:49,650 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event ToolChange
+2021-10-25 23:34:49,651 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event RegisteredMessageReceived
+2021-10-25 23:34:49,653 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event CommandSuppressed
+2021-10-25 23:34:49,655 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event InvalidToolReported
+2021-10-25 23:34:49,656 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event FilamentChange
+2021-10-25 23:34:49,657 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event CaptureStart
+2021-10-25 23:34:49,658 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event CaptureDone
+2021-10-25 23:34:49,660 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event CaptureFailed
+2021-10-25 23:34:49,661 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PostRollStart
+2021-10-25 23:34:49,662 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PostRollEnd
+2021-10-25 23:34:49,663 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event MovieRendering
+2021-10-25 23:34:49,665 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event MovieDone
+2021-10-25 23:34:49,666 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event MovieFailed
+2021-10-25 23:34:49,667 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SlicingStarted
+2021-10-25 23:34:49,668 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SlicingDone
+2021-10-25 23:34:49,671 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SlicingFailed
+2021-10-25 23:34:49,672 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SlicingCancelled
+2021-10-25 23:34:49,673 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SlicingProfileAdded
+2021-10-25 23:34:49,675 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SlicingProfileModified
+2021-10-25 23:34:49,676 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SlicingProfileDeleted
+2021-10-25 23:34:49,677 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrinterProfileAdded
+2021-10-25 23:34:49,678 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrinterProfileModified
+2021-10-25 23:34:49,679 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event PrinterProfileDeleted
+2021-10-25 23:34:49,681 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event SettingsUpdated
+2021-10-25 23:34:49,682 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_backup_backup_created
+2021-10-25 23:34:49,683 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_bedlevelvisualizer_mesh_data_collected
+2021-10-25 23:34:49,684 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_firmware_check_warning
+2021-10-25 23:34:49,686 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_pi_support_throttle_state
+2021-10-25 23:34:49,687 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_pluginmanager_install_plugin
+2021-10-25 23:34:49,688 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_pluginmanager_uninstall_plugin
+2021-10-25 23:34:49,689 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_pluginmanager_enable_plugin
+2021-10-25 23:34:49,691 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_pluginmanager_disable_plugin
+2021-10-25 23:34:49,692 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_softwareupdate_update_succeeded
+2021-10-25 23:34:49,693 - octoprint.events - DEBUG - Subscribed listener <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>> for event plugin_softwareupdate_update_failed
+2021-10-25 23:34:51,139 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,142 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,144 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,146 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,146 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,148 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,174 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,175 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,177 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,182 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,183 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,184 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,189 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,190 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,192 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,197 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,198 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,199 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,216 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,216 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,218 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,220 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:34:51,221 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:34:51,225 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:34:51,560 - octoprint.plugins.tracking - INFO - Sent tracking event webui_load, payload: {'browser_name': 'Chrome', 'browser_version': '94.0.4606.81', 'os_name': 'Windows', 'os_version': '10'}
+2021-10-25 23:35:18,944 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:18,945 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:18,949 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:35:18,951 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:18,952 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:18,957 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:35:18,992 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:18,993 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:18,997 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:35:19,006 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:19,007 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:19,009 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:35:19,016 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:19,017 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:19,020 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:35:19,026 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:19,026 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:19,029 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:35:19,041 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:19,042 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:19,045 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:35:19,045 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-25 23:35:19,046 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-25 23:35:19,050 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-25 23:37:44,029 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:37:44,030 - octoprint.events - DEBUG - Sending action to <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>>
+2021-10-25 23:37:44,251 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-25 23:37:44,251 - octoprint.events - DEBUG - Sending action to <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>>
+2021-10-25 23:39:25,565 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2021-10-25 23:54:25,567 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2021-10-25 23:55:08,620 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 1835, 'printer_state': 'OFFLINE'}
+2021-10-26 00:07:06,984 - octoprint.events.fire - DEBUG - Firing event: UserLoggedIn (Payload: {'username': None})
+2021-10-26 00:07:06,985 - octoprint.events - DEBUG - Sending action to <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>>
+2021-10-26 00:09:25,568 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2021-10-26 00:10:08,581 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 2735, 'printer_state': 'OFFLINE'}
+2021-10-26 00:20:33,247 - octoprint.plugins.klipper - INFO - validateConfig ok
+2021-10-26 00:20:33,297 - octoprint.plugins.klipper - INFO - Save klipper configs
+2021-10-26 00:20:33,306 - octoprint.plugins.klipper - INFO - Writing Klipper config to /home/pi/printer.cfg
+2021-10-26 00:20:35,639 - octoprint.events.fire - DEBUG - Firing event: SettingsUpdated (Payload: {'config_hash': 'd790bac6e0c7bb1fa4ffc414ffe3ef15', 'effective_hash': '2a1fb531f09119a24bb8e974fad077f6'})
+2021-10-26 00:20:35,639 - octoprint.events - DEBUG - Sending action to <function Server.run.<locals>.on_settings_update at 0x6fb671e0>
+2021-10-26 00:20:35,641 - octoprint.events - DEBUG - Sending action to <bound method PrinterStateConnection._onEvent of <octoprint.server.util.sockjs.PrinterStateConnection object at 0x645789b0>>
+2021-10-26 00:21:01,480 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,481 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,485 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:21:01,486 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,487 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,490 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:21:01,514 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,515 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,519 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:21:01,524 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,525 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,528 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:21:01,532 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,533 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,534 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:21:01,540 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,540 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,542 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:21:01,555 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,556 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,559 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:21:01,559 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Databaseconnection with...
+2021-10-26 00:21:01,560 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - {'useExternal': False, 'type': 'sqlite', 'host': 'localhost', 'port': 5432, 'name': 'SpoolDatabase', 'user': 'Olli', 'password': 'illO', 'baseFolder': '/home/pi/.octoprint/data/SpoolManager', 'fileLocation': '/home/pi/.octoprint/data/SpoolManager/spoolmanager.db'}
+2021-10-26 00:21:01,563 - octoprint.plugins.SpoolManager.DatabaseManager - INFO - Database connection succesful. Checking Scheme versions
+2021-10-26 00:24:25,570 - octoprint.server.heartbeat - INFO - Server heartbeat <3
