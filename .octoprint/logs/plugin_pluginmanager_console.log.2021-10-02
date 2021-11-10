@@ -1,5 +1,0 @@
-2021-10-02 19:25:38,869   /home/pi/oprint/bin/python3 -m pip --disable-pip-version-check uninstall --yes OctoPrint-Marlin-Flasher
-2021-10-02 19:25:42,198 > Found existing installation: OctoPrint-Marlin-Flasher 0.5.1
-2021-10-02 19:25:42,199 > Uninstalling OctoPrint-Marlin-Flasher-0.5.1:
-2021-10-02 19:25:42,199 > Successfully uninstalled OctoPrint-Marlin-Flasher-0.5.1
-2021-10-02 19:25:42,356 > Cleaning up plugin marlin_flasher...
